@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button i {
+  padding-left: 16px;
+  font-size: 24px;
+}
+
+button img {
+  padding-left: 16px;
+}
+
+.fa-check {
+  color: #FAD949;
+  padding-right: 8px;
+}
+
+.container {
+  max-width: 1204px;
+  margin: 0 auto;
+}
+
+.main-screen__flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-screen__text-buttons {
+  display: flex;
+}
+
+.main-screen__text-buttons button {
+  margin-right: 16px;
+}
+
+.main-screen__social ul {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.main-screen__social a {
+  color: #FFFFFF;
+  font-size: 24px;
+  padding-right: 16px;
+}
+
+.main-screen__social a:hover {
+  color: #FAD949;
+}
+
+.button-transparent {
+  padding: 16px 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.button-transparent:hover {
+  cursor: pointer;
+}
+
+.button-transparent a {
+  color: #ffffff;
+}
+
+.button-yellow {
+  padding: 16px 40px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: linear-gradient(207deg, rgba(250, 217, 73, 1) 4%, rgba(247, 198, 68, 1) 98%);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.button-yellow a {
+  color: #222222;
+}
+
+.main-screen {
+  height: 100vh;
+  background: #222222 url(./assets/img/background-main.png) no-repeat center top/cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-list li:not(:last-child) {
+  padding-right: 32px;
+}
+
+.header__nav-list a {
+  color: #FFFFFF;
+  padding-bottom: 16px;
+  border-bottom: 1px solid transparent;
+}
+
+.header__nav-list a:hover {
+  /* color: #FAD949; */
+  border-bottom: 1px solid #FAD949;
+}
+
+.header__call {
+  display: flex;
+  align-items: center;
+}
+
+.header__call:hover {
+  cursor: pointer;
+}
+
+.header__call a {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.main-screen__text {
+  max-width: 626px;
+}
+
+.main-screen__text h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.main-screen__text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 130%;
+  color: #ffffff;
+  padding: 16px 0 32px;
+}
+
+.hot-sale {
+  background: url(./assets/img/yellow-bg.png) no-repeat center top/cover;
+}
+
+.hot-sale__heading {
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 180px 0 70px;
+}
+
+.hot-sale__card {
+  font-family: Gilroy, sans-serif;
+  width: 388px;
+  height: 590px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.hot-sale__card:hover {
+  filter: drop-shadow(0px 4px 15px #dbb03a);
+}
+
+.hot-sale__card-container {
+  padding: 40px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hot-sale__card p {
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(34, 34, 34, 0.63);
+}
+
+.hot-sale__card h3 {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #222222;
+}
+
+.hot-sale__card-heading h3 {
+  padding-bottom: 16px;
+}
+
+.hot-sale__card-price {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.hot-sale__card-price h3 {
+  padding-left: 8px;
+}
+
+.hot-sale__card-list li {
+  padding-bottom: 8px;
+}
+
+
+.hot-sale__card-btn {
+  padding: 40px 0;
+}
+
+.hot-sale__card-btn button {
+  width: 253px;
+  height: 53px;
+  background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hot-sale__card-btn button a {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-right: 16px;
+}
+
+.hot-sale__card-btn button:hover {
+  cursor: pointer;
+  background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
+}
+
+.hot-sale__items {
+  padding-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner img {
+  max-width: 1204px;
+}
+
+.working-process__heading {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #222222;
+  padding: 180px 0 70px;
+}
+
+.portfolio {
+  background: url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
+}
+
+.portfolio__heading {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 180px 0 70px;
+}
+
+.portfolio__items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.calculator__heading {
+  padding: 180px 0 70px;
+}
+
+.calculator__heading h2 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 16px;
+}
+
+.calculator__heading {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 130%;
+}
+
+.calculator__items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.calculator__card {
+  width: 694px;
+  /* height: 520px; */
+  background: #FFFFFF;
+  /* border: 1px solid #222222; */
+  filter: drop-shadow(0px 2px 30px rgba(105, 102, 95, 0.1));
+  border-radius: 2px;
+}
+
+.calculator__card-steps h4 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  padding-bottom: 48px;
+}
+
+.calculator__card-steps h4 span {
+  color: #455fff;
+}
+
+.calculator__card-form h4 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.calculator__card-form--btn {
+  padding-top: 48px;
+}
+
+.calculator__card-form--inputs {
+  display: flex;
+}
+
+.calculator__card-form--input-item {
+  padding-bottom: 16px;
+}
+
+
+.calculator__card-content {
+  padding: 80px 56px;
+}
+
+.calculator__card-form--left {
+  padding-right: 80px;
+}
+
+input[type=submit] {
+  width: 253px;
+  height: 53px;
+  background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
+  border: none;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 18px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
+}
