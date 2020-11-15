@@ -63,8 +63,8 @@ button img {
 }
 
 .button-transparent {
-  padding: 16px 40px;
-  border: 1px solid #FFFFFF;
+  /* padding: 16px 40px; */
+  border: 1px solid transparent;
   border-radius: 2px;
   background-color: transparent;
   font-size: 18px;
@@ -73,12 +73,16 @@ button img {
   align-items: center;
 }
 
-.button-transparent:hover {
-  cursor: pointer;
-}
-
 .button-transparent a {
   color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 2px;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-hover a:hover {
+  color: #F7C644;
+  border: 1px solid #F7C644;
 }
 
 .button-yellow {
@@ -89,6 +93,10 @@ button img {
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+
+.button-yellow:hover {
+  background: linear-gradient(207.27deg, #FFD109 3.7%, #FCBB0E 98.51%);
 }
 
 .button-yellow a {
@@ -345,7 +353,7 @@ button img {
 
 .advantages__card-btn button:hover {
   cursor: pointer;
-  background: linear-gradient(207.27deg, #FFE780 3.7%, #FFDD84 98.51%);
+  background: linear-gradient(207.27deg, #FFD109 3.7%, #FCBB0E 98.51%);
 }
 
 .advantages__card-content {
