@@ -642,14 +642,16 @@ input[type=submit]:hover {
 }
 
 .order-block__form {
-  background: #151515;
+  /* background: #151515; */
+  background: linear-gradient(206.08deg, #FAD949 -70.14%, #F7C644 267.69%);
   border-radius: 2px;
   width: 593px;
+  color: #222222;
 }
 
 .order-block__form label {
   font-size: 18px;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   padding-bottom: 8px;
 }
 
@@ -665,18 +667,18 @@ input[type=submit]:hover {
 }
 
 .order-block__form p {
-  font-weight: 500;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 130%;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   padding-bottom: 40px;
 }
 
 .order-block__form h4 {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 400;
+  font-size: 40px;
   line-height: 130%;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   padding-bottom: 40px;
 }
 

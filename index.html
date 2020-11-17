@@ -23,7 +23,7 @@
               <li><a href="#">Услуги</a></li>
               <li><a href="#">Цены</a></li>
               <li><a href="#">Портфолио</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#Order-form">Контакты</a></li>
             </ul>
           </nav>
           <div class="header__call">
@@ -38,7 +38,7 @@
           <div class="main-screen__text-buttons">
             <button class="button-transparent btn-hover"><a href="#">Посмотреть видео<i
                   class="far fa-play-circle btn-hover"></i></a></button>
-            <button class="button-yellow"><a href="#">Сделать заказ</a><img src="./assets/icons/arrow-black.svg"
+            <button class="button-yellow"><a href="#Order-form">Сделать заказ</a><img src="./assets/icons/arrow-black.svg"
                 alt="video"></button>
           </div>
         </div>
@@ -163,7 +163,7 @@
               <h3>от 199 рублей</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -187,7 +187,7 @@
               <h3>от 20 рублей</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -211,7 +211,7 @@
               <h3>от 50 рублей</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -235,7 +235,7 @@
               <h3>от 99 рублей</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -259,7 +259,7 @@
               <h3>от 190 рублей</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -283,7 +283,7 @@
               <h3>Бесплатно!</h3>
             </div>
             <div class="advantages__card-btn">
-              <button><a href="#">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
+              <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
                   alt="arrow"></button>
             </div>
           </div>
@@ -381,7 +381,7 @@
     </div>
   </section>
 
-  <section class="calculator">
+  <section class="calculator" id="Calculator">
     <div class="container">
       <div class="calculator__heading">
         <h2>Сколько это будет стоить?</h2>
@@ -450,7 +450,7 @@
     </div>
   </section>
 
-  <!-- <section class="order-block" id="Order-form">
+  <section class="order-block" id="Order-form">
     <div class="container">
       <h2 class="order-block__heading">Обсудим проект?</h2>
       <div class="order-block__form">
@@ -458,18 +458,19 @@
           <h4>Мы вам перезвоним!</h4>
           <div class="order-block__form-input">
             <label for="name">Ваше имя</label>
-            <input type="text" placeholder="Как к вам можно обращаться?" id="name">
+            <input type="text" placeholder="Как к вам можно обращаться?" id="name" required>
           </div>
           <div class="order-block__form-input">
             <label for="phone">Ваш номер телефона</label>
-            <input type="text" placeholder="Как к вам можно обращаться?" id="phone">
+            <input type="text" placeholder="+375 (25) 123 45 67" id="phone" pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
+            required>
           </div>
           <div class="order-block__form-input">
-            <label for="name">Комментарий к заказу (не обязательно)</label>
+            <label for="textarea">Комментарий к заказу (не обязательно)</label>
             <input type="text" placeholder="Тут вы можете оставить свой комментарий, либо задать вопрос консультанту"
-              id="name">
+              id="textarea">
           </div>
-          <p>После обработки заявки, наш специалист свяжется с вами
+          <p>После обработки заявки, наш специалист свяжется с вами<br>
             в кратчайшие сроки по указанному номеру</p>
           <div class="order-block-form--btn">
             <input type="submit" value="Перезвоните мне">
@@ -477,7 +478,7 @@
         </form>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <footer class="footer">
     <div class="container">
