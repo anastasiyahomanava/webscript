@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Gilroy, sans-serif;
+  font-family: 'Gilroy', sans-serif;
 }
 
 ul {
@@ -28,7 +28,7 @@ button img {
 }
 
 .container {
-  max-width: 1204px;
+  max-width: 1136px;
   margin: 0 auto;
 }
 
@@ -68,9 +68,10 @@ button img {
   border-radius: 2px;
   background-color: transparent;
   font-size: 18px;
-  color: #ffffff;
+  /* color: #ffffff; */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button-transparent a {
@@ -78,6 +79,7 @@ button img {
   padding: 16px 40px;
   border-radius: 2px;
   border: 1px solid #FFFFFF;
+  display: flex;
 }
 
 .btn-hover a:hover {
@@ -149,9 +151,9 @@ button img {
   padding-left: 8px;
 }
 
-.main-screen__text {
+/* .main-screen__text {
   max-width: 626px;
-}
+} */
 
 .main-screen__text h1 {
   font-weight: 700;
@@ -163,7 +165,7 @@ button img {
 .main-screen__text p {
   font-size: 20px;
   font-weight: 300;
-  line-height: 130%;
+  line-height: 140%;
   color: #ffffff;
   padding: 16px 0 32px;
 }
@@ -173,19 +175,20 @@ button img {
 }
 
 .hot-sale__heading {
-  font-family: Gilroy, sans-serif;
+  font-family: 'Gilroy', sans-serif;
+  text-align: center;
   font-weight: 800;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 59px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 180px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .hot-sale__card {
-  font-family: Gilroy, sans-serif;
-  width: 388px;
-  height: 590px;
+  font-family: 'Gilroy', sans-serif;
+  width: 368px;
+  /* height: 590px; */
   background: #FFFFFF;
   border-radius: 2px;
 }
@@ -203,12 +206,12 @@ button img {
 
 .hot-sale__card p {
   font-size: 16px;
-  line-height: 130%;
+  line-height: 140%;
   color: rgba(34, 34, 34, 0.63);
 }
 
 .hot-sale__card h3 {
-  font-family: Gilroy;
+  font-family: Gilroy, sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
@@ -236,6 +239,7 @@ button img {
 
 .hot-sale__card-btn {
   padding: 40px 0;
+  margin-bottom: 24px;
 }
 
 .hot-sale__card-btn button {
@@ -265,6 +269,55 @@ button img {
   padding-bottom: 160px;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .main-screen__text h1 {
+    font-size: 40px;
+  }
+
+  .button-transparent i {
+    font-size: 20px;
+  }
+
+  .button-transparent a,
+  .main-screen__text p,
+  .button-yellow {
+    font-size: 16px;
+  }
+
+  .button-transparent a,
+  .button-yellow {
+    padding: 16px 32px;
+  }
+
+  .hot-sale__heading {
+    font-size: 32px;
+    padding: 64px 0 32px;
+  }
+
+  .hot-sale__card-container {
+    padding: 32px 0 0 32px;
+  }
+
+  .hot-sale__card h3 {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .hot-sale__card-price,
+  .hot-sale__card-btn {
+    padding: 24px 0;
+  }
+
+  .hot-sale__items {
+    padding-bottom: 64px;
+  }
+
+  .hot-sale__card-btn {
+    margin-bottom: 24px;
+  }
+
 }
 
 .advantages__heading {
