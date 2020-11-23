@@ -149,8 +149,8 @@ button img {
 }
 
 .main-screen__text h1 {
-  font-weight: 700;
-  font-size: 48px;
+  font-weight: 500;
+  font-size: 60px;
   line-height: 120%;
   color: #FFFFFF;
 }
@@ -166,7 +166,7 @@ button img {
 /* ТОП ПРЕДЛОЖЕНИЯ МЕСЯЦА */
 
 .hot-sale {
-  background: url(./assets/img/yellow-bg.png) no-repeat center top/cover;
+  background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
 }
 
 .hot-sale__heading {
@@ -197,9 +197,13 @@ button img {
 }
 
 .hot-sale__card p {
-  font-size: 16px;
+  /* font-size: 16px;
   line-height: 140%;
-  color: rgba(34, 34, 34, 0.9);
+  color: rgba(34, 34, 34, 0.9); */
+  font-size: 18px;
+  line-height: 140%;
+  color: #222222;
+  opacity: 0.8;
 }
 
 .hot-sale__card h3 {
@@ -215,6 +219,10 @@ button img {
   padding-bottom: 8px;
 }
 
+.hot-sale__card-heading strong {
+  font-weight: 500;
+}
+
 .hot-sale__card-price {
   display: flex;
   align-items: center;
@@ -226,7 +234,7 @@ button img {
   padding-left: 8px;
 }
 
-.hot-sale__card-list li {
+.hot-sale__card-list li:not(:last-child) {
   padding-bottom: 16px;
 }
 
@@ -235,14 +243,15 @@ button img {
 }
 
 .hot-sale__card-btn button {
-  width: 253px;
-  height: 53px;
+  /* width: 253px;
+  height: 53px; */
   background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
   border: none;
   border-radius: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 18px 53px;
 }
 
 .hot-sale__card-btn button img {
@@ -313,26 +322,36 @@ button img {
 }
 
 .advantages__card-list {
-  padding: 40px 0 0 16px;
+  padding: 40px 0 40px 16px;
   list-style-type: disc;
 }
 
 .advantages__card-list li {
   font-size: 18px;
-  padding-bottom: 24px;
-  color: #222222;
+  color: #F7C644;
+  font-weight: 400;
 }
 
-.advantages__card-price {
-  padding-top: 24px;
+.advantages__card-list li:not(:last-child) {
+  padding-bottom: 24px;
 }
+
+.advantages__card-list li span {
+  color: #222222;
+  opacity: .7;
+}
+
+/* .advantages__card-price {
+  padding-top: 24px;
+} */
 
 .advantages__card {
   border: 1px solid #F2F2F2;
 }
 
 .advantages__card:hover {
-  filter: drop-shadow(0px 2px 30px rgba(105, 102, 95, 0.2));
+  /* filter: drop-shadow(0px 2px 30px rgba(105, 102, 95, 0.2)); */
+  box-shadow: 0px 2px 30px rgba(105, 102, 95, 0.1);
 }
 
 .advantages__card-btn {
@@ -371,6 +390,10 @@ button img {
 
 .second-row {
   margin-top: 16px;
+}
+
+.banner {
+  background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
 }
 
 .banner img {
@@ -421,7 +444,7 @@ button img {
 }
 
 .portfolio {
-  background: url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
+  background: #FAD949 url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
 }
 
 .portfolio__heading {
@@ -522,8 +545,12 @@ button img {
 .calculator__card {
   width: 656px;
   background: #FFFFFF;
-  filter: drop-shadow(0px 2px 20px rgba(105, 102, 95, .2));
+  border: 1px solid #F2F2F2;
   border-radius: 2px;
+}
+
+.calculator__card:hover {
+  box-shadow: 0px 2px 30px rgba(105, 102, 95, 0.1);
 }
 
 .calculator__card-form label {
@@ -595,7 +622,7 @@ button img {
 }
 
 .offer {
-  background: url(./assets/img/yellow-bg.png) no-repeat center top/cover;
+  background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
 }
 
 .offer__heading {
@@ -664,6 +691,18 @@ input[type=submit]:hover {
 .promo-video__video video {
   width: 80%;
   object-fit: cover;
+}
+
+.feedback {
+  background: #FAD949 url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
+}
+
+.feedback__heading h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 120px 0 70px;
 }
 
 .order-block {
@@ -741,7 +780,7 @@ input[type=submit]:hover {
 }
 
 .footer {
-  background: url(./assets/img/yellow-bg.png) no-repeat center top/cover;
+  background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
 }
 
 .footer__flex-container {
@@ -832,24 +871,23 @@ input[type=submit]:hover {
 
 
   .advantages__card-list {
-    padding: 32px 0 0 16px;
-    list-style-type: disc;
+    padding: 32px 0 32px 16px;
+    /* list-style-type: disc; */
   }
 
   .advantages__card-list li:not(:last-child) {
     padding-bottom: 16px;
-    color: #222222;
+    /* color: #222222; */
     font-size: 16px;
   }
 
-  .advantages__card-price {
+  /* .advantages__card-price {
     padding-top: 16px;
-  }
+  } */
 
   .advantages__card-btn {
-    padding-top: 40px;
+    padding-top: 32px;
   }
-
 
   .advantages__card-btn button a {
     font-size: 16px;
