@@ -644,6 +644,28 @@ input[type=submit]:hover {
   background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
 }
 
+.promo-video {
+  padding: 120px 0;
+}
+
+.promo-video__heading h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 48px;
+}
+
+.promo-video__video {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-video__video video {
+  width: 80%;
+  object-fit: cover;
+}
+
 .order-block {
   background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
   padding-bottom: 120px;
