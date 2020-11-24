@@ -163,6 +163,25 @@ button img {
   padding: 16px 0 32px;
 }
 
+.about-us__heading {
+  padding: 120px 0 70px;
+}
+
+.about-us__heading h2 {
+  font-weight: 500;
+  font-size: 48px;
+  color: #222222;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.about-us__heading p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  opacity: 0.8;
+}
+
 /* ТОП ПРЕДЛОЖЕНИЯ МЕСЯЦА */
 
 .hot-sale {
@@ -197,9 +216,6 @@ button img {
 }
 
 .hot-sale__card p {
-  /* font-size: 16px;
-  line-height: 140%;
-  color: rgba(34, 34, 34, 0.9); */
   font-size: 18px;
   line-height: 140%;
   color: #222222;
@@ -243,8 +259,6 @@ button img {
 }
 
 .hot-sale__card-btn button {
-  /* width: 253px;
-  height: 53px; */
   background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
   border: none;
   border-radius: 2px;
@@ -341,10 +355,6 @@ button img {
   opacity: .7;
 }
 
-/* .advantages__card-price {
-  padding-top: 24px;
-} */
-
 .advantages__card {
   border: 1px solid #F2F2F2;
 }
@@ -392,13 +402,17 @@ button img {
   margin-top: 16px;
 }
 
+/* БАННЕР */
+
 .banner {
   background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
 }
 
 .banner img {
-  max-width: 1136px;
+  max-width: 100%;
 }
+
+/* КАК МЫ РАБОТАЕМ */
 
 .working-process__heading {
   font-weight: 500;
@@ -418,7 +432,7 @@ button img {
 .working-process__card {
   background: #FFFFFF;
   width: 272px;
-  height: 400px;
+  /* height: 400px; */
   border-radius: 2px;
   border: 1px solid #F2F2F2;
   padding: 62px 42px;
@@ -442,6 +456,8 @@ button img {
   font-size: 24px;
   font-weight: 500;
 }
+
+/* НАШИ РАБОТЫ (Нужно, чтобы сначала показывался текст, а по нажатию переворачивалась на картинку */
 
 .portfolio {
   background: #FAD949 url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
@@ -469,8 +485,8 @@ button img {
   position: relative;
 }
 
-.front,
-.back {
+.portfolio__card-back,
+.portfolio__card-front {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -479,29 +495,33 @@ button img {
   display: flex;
   transition: 1s;
   backface-visibility: hidden;
-  background-color: #fff;
   border-radius: 4px;
+  background: #FFFFFF;
 }
 
-.front img {
+.portfolio__card-front {
+  transform: rotateY(180deg);
+}
+
+.portfolio__card-back img {
   max-width: 100%;
   min-width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
-.back {
+.portfolio__card-front {
   padding: 56px;
-  transform: rotateY(180deg);
   flex-direction: column;
 }
 
-.back h3 {
+.portfolio__card-front h3 {
   font-size: 40px;
+  font-weight: 500;
   padding-bottom: 16px;
 }
 
-.back p {
+.portfolio__card-front p {
   font-size: 20px;
   line-height: 130%;
   padding-bottom: 16px;
@@ -509,13 +529,19 @@ button img {
   font-weight: 300;
 }
 
-.portfolio__card:hover .front {
+.portfolio__card:hover .portfolio__card-back {
   transform: rotateY(180deg);
 }
 
-.portfolio__card:hover .back {
+.portfolio__card:hover .portfolio__card-front {
   transform: rotateY(360deg);
 }
+
+.portfolio__card {
+  perspective: 1000px;
+}
+
+/* КАЛЬКУЛЯТОР */
 
 .calculator__heading {
   padding: 180px 0 70px;
@@ -590,7 +616,6 @@ button img {
   padding-bottom: 16px;
 }
 
-
 .calculator__card-content {
   padding: 62px 56px;
 }
@@ -620,6 +645,8 @@ button img {
   cursor: pointer;
   background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
 }
+
+/* ПРЕДЛОЖЕНИЕ */
 
 .offer {
   background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
@@ -671,6 +698,8 @@ input[type=submit]:hover {
   background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
 }
 
+/* ВИДЕО */
+
 .promo-video {
   padding: 120px 0;
 }
@@ -693,6 +722,8 @@ input[type=submit]:hover {
   object-fit: cover;
 }
 
+/* ОТЗЫВЫ */
+
 .feedback {
   background: #FAD949 url(./assets/img/yellow-bg-2.png) no-repeat center top/cover;
 }
@@ -704,6 +735,66 @@ input[type=submit]:hover {
   text-transform: uppercase;
   padding: 120px 0 70px;
 }
+
+.feedback__cards {
+  padding-bottom: 120px;
+  display: flex;
+  width: 1136px;
+  overflow: hidden;
+}
+
+.feedback__card {
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  width: 752px;
+  height: 460px;
+  filter: drop-shadow(0px 4px 15px #dbb03a);
+  margin-right: 20px;
+}
+
+.feedback__card-text {
+  padding: 60px 32px 0 32px;
+  width: 480px;
+}
+
+.feedback__card-text_heading {
+  padding-bottom: 24px;
+}
+
+.feedback__card-text_heading h4 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.feedback__card-text_heading p {
+  color: #222222;
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+.feedback__card-text_message {
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(34, 34, 34, 0.8);
+  padding-bottom: 24px;
+}
+
+.feedback__card-social ul {
+  display: flex;
+}
+
+.feedback__card-social ul a {
+  color: #151515;
+  padding-right: 16px;
+  font-size: 24px;
+}
+
+.feedback__card-social ul a:hover {
+  color: #455fff;
+}
+
+/* ФОРМА ЗАКАЗА */
 
 .order-block {
   background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
@@ -778,6 +869,8 @@ input[type=submit]:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+/* FOOTER */
 
 .footer {
   background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
@@ -909,3 +1002,160 @@ input[type=submit]:hover {
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 1110px) {
+  .container {
+    max-width: 944px;
+  }
+
+  .hot-sale__card {
+    width: 300px;
+  }
+
+  .hot-sale__card-container {
+    padding: 24px;
+  }
+
+  .hot-sale__card h3 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .hot-sale__card p {
+    font-size: 14px;
+  }
+
+  .hot-sale__card-list li {
+    font-size: 14px;
+  }
+
+  .hot-sale__card-price {
+    padding: 24px 0;
+  }
+
+  .hot-sale__card-btn button {
+    padding: 18px 32px;
+  }
+
+  .advantages__card-content {
+    padding: 32px;
+  }
+
+  .advantages__card-heading h3,
+  .advantages__card-price h3 {
+    font-size: 24px
+  }
+
+  .advantages__card-content li {
+    font-size: 14px;
+  }
+
+  .advantages__card-btn button a {
+    font-size: 16px;
+  }
+
+  .advantages__card-btn button {
+    width: 240px;
+  }
+
+  .portfolio__card {
+    width: 301px;
+    height: 340px;
+    position: relative;
+  }
+
+  .portfolio__card-front {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 688px;
+  }
+
+  .main-screen__text h1 {
+    font-size: 48px;
+  }
+
+  .header__logo img {
+    width: 88px;
+  }
+
+  .header__nav-list a {
+    font-size: 12px;
+  }
+
+  .header__call a {
+    font-size: 16px;
+  }
+
+  .header__call img {
+    width: 16px;
+  }
+
+  .header__nav-list li:not(:last-child) {
+    padding-right: 16px;
+  }
+
+  .about-us__heading h2,
+  .hot-sale__heading {
+    font-size: 32px;
+  }
+
+  .about-us__heading p {
+    font-size: 16px;
+  }
+
+  .hot-sale__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hot-sale__card:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .working-process__card {
+    width: 157px;
+    padding: 32px;
+  }
+
+  .working-process__card h4 {
+    font-size: 16px;
+  }
+
+  .working-process__card p {
+    font-size: 14px;
+  }
+
+  .working-process__card img {
+    width: 48px;
+  }
+
+  .calculator__img {
+    display: none;
+  }
+
+  .feedback__cards {
+    width: 100%;
+  }
+
+  .feedback__card {
+    width: 688px;
+  }
+
+  .feedback__card-text_heading h4 {
+    font-size: 32px;
+  }
+
+  .feedback__card-text_heading p {
+    font-size: 14px;
+  }
+
+  .order-block__text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {}
