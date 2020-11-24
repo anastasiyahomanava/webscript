@@ -1029,11 +1029,9 @@ input[type=submit]:hover {
     line-height: 120%;
   }
 
-  .hot-sale__card p {
-    font-size: 14px;
-  }
-
-  .hot-sale__card-list li {
+  .hot-sale__card p,
+  .hot-sale__card-list li,
+  .advantages__card-content li {
     font-size: 14px;
   }
 
@@ -1052,10 +1050,6 @@ input[type=submit]:hover {
   .advantages__card-heading h3,
   .advantages__card-price h3 {
     font-size: 24px
-  }
-
-  .advantages__card-content li {
-    font-size: 14px;
   }
 
   .advantages__card-btn button a {
@@ -1251,7 +1245,7 @@ input[type=submit]:hover {
 
   .working-process__card {
     width: 157px;
-    padding: 32px;
+    padding: 24px;
   }
 
   .working-process__card h4 {
@@ -1264,6 +1258,10 @@ input[type=submit]:hover {
 
   .working-process__card img {
     width: 48px;
+  }
+
+  .calculator__card {
+    width: 688px;
   }
 
   .calculator__img {
@@ -1288,6 +1286,47 @@ input[type=submit]:hover {
 
   .order-block__text {
     display: none;
+  }
+
+  .card-margin {
+    margin-top: 16px;
+  }
+
+  .advantages__card {
+    width: 334px;
+  }
+
+  .portfolio__card-hidden-card {
+    display: none;
+  }
+
+  .portfolio__card {
+    width: 334px;
+  }
+
+  .feedback__card img {
+    width: 334px;
+  }
+
+  .feedback__card {
+    height: 420px;
+  }
+
+  .order-block__form {
+    width: 460px;
+  }
+
+  .order-block__form form {
+    padding: 40px;
+  }
+
+  .order-block__form [type=text] {
+    width: 380px;
+  }
+
+  .order-block__form input[type=submit] {
+    width: 380px;
+    height: 57px;
   }
 }
 
