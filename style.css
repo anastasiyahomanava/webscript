@@ -1059,7 +1059,7 @@ input[type=submit]:hover {
   }
 
   .portfolio__card {
-    width: 301px;
+    width: 304px;
     height: 340px;
     position: relative;
   }
@@ -1067,6 +1067,46 @@ input[type=submit]:hover {
   .portfolio__card-front {
     padding: 32px;
   }
+
+  .working-process__card {
+    width: 224px;
+    padding: 48px 40px;
+  }
+
+  .calculator__card {
+    width: 544px;
+  }
+
+  .calculator__img img {
+    width: 383px;
+    height: 428px;
+  }
+
+  .calculator__card-content {
+    padding: 40px;
+  }
+
+  .calculator__card-form h4 {
+    font-size: 18px;
+  }
+
+  .calculator__card-form label {
+    font-size: 14px;
+  }
+
+  .calculator__card-steps h4 {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+
+  .calculator__card-form--btn {
+    padding-top: 40px;
+  }
+
+  feedback__cards {
+    width: 944px;
+    overflow: hidden;
+}
 }
 
 @media screen and (max-width: 940px) {
