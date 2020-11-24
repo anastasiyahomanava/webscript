@@ -1353,4 +1353,88 @@ input[type=submit]:hover {
   }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 335px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .main-screen__text h1 {
+    font-size: 32px;
+  }
+
+  .main-screen__text p {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .main-screen__text-buttons {
+    flex-direction: column;
+  }
+
+  .main-screen__text-buttons button {
+    margin: 0 0 16px 0;
+  }
+
+  .button-transparent a {
+    padding: 16px 67px;
+  }
+
+  .button-yellow {
+    justify-content: center;
+  }
+
+  .portfolio__card-hidden-card-mob {
+    display: none;
+  }
+
+  .calculator {
+    display: none;
+  }
+
+  .footer__flex-container {
+    flex-direction: column;
+  }
+
+  .offer {
+    background: #FAD949 url(./assets/img/black-bg.png) no-repeat center top/cover;
+  }
+
+  .offer__heading {
+    color: #FFFFFF;
+  }
+
+  .about-us__heading h2,
+  .hot-sale__heading,
+  .advantages__heading h2,
+  .working-process__heading,
+  .portfolio__heading,
+  .offer__heading h2,
+  .promo-video__heading h2,
+  .feedback__heading h2,
+  .order-block__heading {
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .order-block__form [type=text],
+  .order-block__form input[type=submit] {
+    width: 276px;
+  }
+
+  .order-block__form form {
+    padding: 29px;
+  }
+
+  .offer__form [type=text], .offer__form [type=submit] {
+    width: 335px;
+  }
+
+  .offer__form [type=submit] {
+    margin-top: 16px;
+  }
+}
