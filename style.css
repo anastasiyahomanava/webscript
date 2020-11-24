@@ -1008,6 +1008,14 @@ input[type=submit]:hover {
     max-width: 944px;
   }
 
+  .main-screen__text h1 {
+    font-size: 48px;
+  }
+
+  .main-screen__text p {
+    font-size: 16px;
+  }
+
   .hot-sale__card {
     width: 300px;
   }
