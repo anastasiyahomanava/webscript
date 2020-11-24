@@ -1103,10 +1103,10 @@ input[type=submit]:hover {
     padding-top: 40px;
   }
 
-  feedback__cards {
+  .feedback__cards {
     width: 944px;
     overflow: hidden;
-}
+  }
 }
 
 @media screen and (max-width: 940px) {
