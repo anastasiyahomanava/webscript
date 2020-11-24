@@ -1072,7 +1072,8 @@ input[type=submit]:hover {
     position: relative;
   }
 
-  .portfolio__heading {
+  .portfolio__heading,
+  .hot-sale__heading {
     font-size: 40px;
   }
 
@@ -1089,18 +1090,31 @@ input[type=submit]:hover {
   .calculator__heading,
   .offer__heading,
   .feedback__heading h2,
-  .order-block__heading {
+  .order-block__heading,
+  .hot-sale__heading,
+  .advantages__heading,
+  .working-process__heading,
+  .about-us__heading {
     padding: 80px 0 48px;
   }
 
   .portfolio__items,
   .offer__form,
-  .feedback__cards {
+  .feedback__cards,
+  .hot-sale__items,
+  .order-block {
     padding-bottom: 80px;
   }
 
+  .working-process__cards {
+    margin-bottom: 80px;
+  }
+
   .calculator__heading h2,
-  .order-block__heading {
+  .order-block__heading,
+  .advantages__heading h2,
+  .working-process__heading,
+  .about-us__heading h2 {
     font-size: 40px;
   }
 
@@ -1139,15 +1153,22 @@ input[type=submit]:hover {
     padding-top: 40px;
   }
 
-  .calculator__items {
+  .calculator__items,
+  .advantages__cards {
     padding-bottom: 80px;
+  }
+
+  .working-process__card h4 {
+    font-size: 18px;
   }
 
   .offer h2 {
     font-size: 40px;
   }
 
-  .offer p {
+  .offer p,
+  .advantages__heading p,
+  .about-us__heading p {
     font-size: 16px;
   }
 
