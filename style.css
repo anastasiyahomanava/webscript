@@ -299,7 +299,6 @@ button img {
 .advantages__heading h2 {
   font-weight: 500;
   font-size: 48px;
-  line-height: 59px;
   text-transform: uppercase;
   color: #222222;
   padding-bottom: 8px;
@@ -550,7 +549,6 @@ button img {
 .calculator__heading h2 {
   font-weight: 500;
   font-size: 48px;
-  line-height: 59px;
   text-transform: uppercase;
   color: #222222;
   padding-bottom: 8px;
@@ -860,6 +858,41 @@ input[type=submit]:hover {
   margin-left: 48px;
 }
 
+.order-block__text h4 {
+  padding: 40px 0 24px;
+}
+
+.order-block__call {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.order-block__call:hover {
+  cursor: pointer;
+}
+
+.order-block__call a {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.order-block__social ul {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.order-block__social a {
+  color: #FFFFFF;
+  font-size: 24px;
+  padding-right: 16px;
+}
+
+.order-block__social a:hover {
+  color: #FAD949;
+}
+
 .order-block__text span {
   color: #FFD109;
 }
@@ -917,8 +950,31 @@ input[type=submit]:hover {
     padding: 16px 32px;
   }
 
-  .hot-sale__heading {
+  .hot-sale__heading,
+  .about-us__heading h2,
+  .advantages__heading h2,
+  .working-process__heading,
+  .portfolio__heading,
+  .calculator__heading h2,
+  .offer__heading h2,
+  .promo-video__heading h2,
+  .feedback__heading h2,
+  .order-block__heading {
     font-size: 32px;
+  }
+
+  .about-us__heading p,
+  .advantages__heading p,
+  .calculator__heading p,
+  .offer__heading p {
+    font-size: 16px;
+  }
+
+  .hot-sale__heading,
+  .working-process__heading,
+  .portfolio__heading,
+  .feedback__heading h2,
+  .order-block__heading {
     padding: 64px 0 32px;
   }
 
@@ -948,10 +1004,6 @@ input[type=submit]:hover {
     padding: 64px 0 32px;
   }
 
-  .advantages__heading p {
-    font-size: 18px;
-  }
-
   .advantages__cards {
     padding-bottom: 64px;
   }
@@ -961,22 +1013,14 @@ input[type=submit]:hover {
     font-size: 24px;
   }
 
-
-
   .advantages__card-list {
     padding: 32px 0 32px 16px;
-    /* list-style-type: disc; */
   }
 
   .advantages__card-list li:not(:last-child) {
     padding-bottom: 16px;
-    /* color: #222222; */
     font-size: 16px;
   }
-
-  /* .advantages__card-price {
-    padding-top: 16px;
-  } */
 
   .advantages__card-btn {
     padding-top: 32px;
@@ -998,8 +1042,22 @@ input[type=submit]:hover {
     padding: 64px 0 32px;
   }
 
-  .calculator__heading p {
-    font-size: 18px;
+  .order-block__form form {
+    padding: 52px;
+  }
+
+  .order-block__form h4 {
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+
+  .order-block__form p {
+    padding: 8px 0 24px;
+  }
+
+  .order-block__text {
+    font-size: 24px;
+    line-height: 120%;
   }
 }
 
@@ -1461,6 +1519,14 @@ input[type=submit]:hover {
     padding: 24px;
   }
 
+  .working-process__card h4 {
+    font-size: 24px;
+  }
+
+  .working-process__card p {
+    font-size: 16px;
+  }
+
   .order-block__form-input {
     padding-bottom: 16px;
   }
@@ -1470,7 +1536,17 @@ input[type=submit]:hover {
     padding: 8px 0 24px;
   }
 
-  .footer__logo, .footer__text {
+  .order-block__form h4 {
+    font-size: 24px;
+  }
+
+  .footer__logo,
+  .footer__text {
     padding-bottom: 24px;
+  }
+
+  .about-us__heading p,
+  .advantages__heading p {
+    display: none;
   }
 }
