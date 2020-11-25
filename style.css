@@ -1430,11 +1430,47 @@ input[type=submit]:hover {
     padding: 29px;
   }
 
-  .offer__form [type=text], .offer__form [type=submit] {
+  .offer__form [type=text],
+  .offer__form [type=submit] {
     width: 335px;
+    height: 57px;
   }
 
   .offer__form [type=submit] {
     margin-top: 16px;
+  }
+
+  .promo-video__video video {
+    width: 100%;
+  }
+
+  .hot-sale__card {
+    width: 100%;
+  }
+
+  .hot-sale__card-btn button {
+    padding: 18px 52px;
+  }
+
+  .advantages__card-btn button {
+    width: 284px;
+    height: 57px;
+  }
+
+  .advantages__card-content {
+    padding: 24px;
+  }
+
+  .order-block__form-input {
+    padding-bottom: 16px;
+  }
+
+  .order-block__form p {
+    font-size: 12px;
+    padding: 8px 0 24px;
+  }
+
+  .footer__logo, .footer__text {
+    padding-bottom: 24px;
   }
 }
