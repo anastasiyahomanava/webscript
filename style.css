@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Gilroy', sans-serif;
+  color: #222222;
 }
 
 ul {
@@ -164,7 +168,7 @@ button img {
 }
 
 .about-us__heading {
-  padding: 120px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .about-us__heading h2 {
@@ -285,7 +289,7 @@ button img {
 }
 
 .hot-sale__items {
-  padding-bottom: 160px;
+  padding-bottom: 120px;
   display: flex;
   justify-content: space-between;
 }
@@ -293,7 +297,7 @@ button img {
 /* ЧТО МЫ УМЕЕМ? */
 
 .advantages__heading {
-  padding: 180px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .advantages__heading h2 {
@@ -419,7 +423,7 @@ button img {
   line-height: 59px;
   text-transform: uppercase;
   color: #222222;
-  padding: 120px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .working-process__cards {
@@ -543,7 +547,7 @@ button img {
 /* КАЛЬКУЛЯТОР */
 
 .calculator__heading {
-  padding: 180px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .calculator__heading h2 {
@@ -707,7 +711,7 @@ input[type=submit]:hover {
   font-size: 48px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-bottom: 48px;
+  padding-bottom: 80px;
 }
 
 .promo-video__video {
@@ -731,7 +735,7 @@ input[type=submit]:hover {
   font-size: 48px;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 120px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .feedback__cards {
@@ -804,7 +808,7 @@ input[type=submit]:hover {
   font-size: 48px;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 120px 0 70px;
+  padding: 120px 0 80px;
 }
 
 .order-block__form {
@@ -859,8 +863,6 @@ input[type=submit]:hover {
 }
 
 .order-block__text h4 {
-  /* font-weight: 500;
-  padding: 56px 0 24px; */
   font-weight: 400;
   padding: 72px 0 16px;
   color: #ffd109;
