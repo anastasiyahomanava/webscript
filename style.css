@@ -852,20 +852,23 @@ input[type=submit]:hover {
 
 .order-block__text {
   font-weight: 400;
-  font-size: 48px;
-  line-height: 130%;
+  font-size: 40px;
+  line-height: 110%;
   color: #FFFFFF;
   margin-left: 48px;
 }
 
 .order-block__text h4 {
-  padding: 40px 0 24px;
+  /* font-weight: 500;
+  padding: 56px 0 24px; */
+  font-weight: 400;
+  padding: 72px 0 16px;
+  color: #ffd109;
 }
 
 .order-block__call {
   display: flex;
   align-items: center;
-  padding-bottom: 16px;
 }
 
 .order-block__call:hover {
@@ -880,7 +883,6 @@ input[type=submit]:hover {
 
 .order-block__social ul {
   display: flex;
-  padding-bottom: 120px;
 }
 
 .order-block__social a {
