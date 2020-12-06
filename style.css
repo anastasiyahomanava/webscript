@@ -167,6 +167,8 @@ button img {
   padding: 16px 0 32px;
 }
 
+/* ПОЧЕМУ ВЫБИРАЮТ НАС */
+
 .about-us__heading {
   padding: 120px 0 80px;
 }
@@ -184,6 +186,57 @@ button img {
   font-size: 20px;
   line-height: 140%;
   opacity: 0.8;
+}
+
+.about-us__cards {
+  display: flex;
+  padding-bottom: 120px;
+}
+
+.about-us__card {
+  border-radius: 2px;
+  width: 368px;
+  height: 420px;
+}
+
+.about-us__card:hover {
+  box-shadow: 0px 2px 30px rgba(105, 102, 95, 0.2);
+}
+
+.about-us__card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.about-us__card-text {
+  padding-top: 140px;
+  padding-left: 52px;
+}
+
+.about-us__card h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.about-us__card p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 158%;
+  color: rgba(34, 34, 34, 0.8);
+  width: 275px;
+  padding-top: 16px;
+}
+
+.first-card {
+  background: #FAD949 url(./assets/img/second-block/1.png) no-repeat center top/cover;
+}
+
+.second-card {
+  background: #FAD949 url(./assets/img/second-block/2.png) no-repeat center top/cover;
+}
+
+.third-card {
+  background: #FAD949 url(./assets/img/second-block/3.png) no-repeat center top/cover;
 }
 
 /* ТОП ПРЕДЛОЖЕНИЯ МЕСЯЦА */
@@ -304,14 +357,12 @@ button img {
   font-weight: 500;
   font-size: 48px;
   text-transform: uppercase;
-  color: #222222;
   padding-bottom: 8px;
 }
 
 .advantages__heading {
   font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
 }
 
 
@@ -561,7 +612,6 @@ button img {
 .calculator__heading {
   font-weight: 300;
   font-size: 20px;
-  line-height: 130%;
 }
 
 .calculator__items {
