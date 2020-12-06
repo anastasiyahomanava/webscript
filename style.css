@@ -897,6 +897,15 @@ input[type=submit]:hover {
   color: #FAD949;
 }
 
+.order-block__adress {
+  font-size: 20px;
+}
+
+.order-block__adress i {
+  padding-right: 8px;
+  color: #FAD949;
+}
+
 .order-block__text span {
   color: #FFD109;
 }
