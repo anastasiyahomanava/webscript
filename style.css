@@ -82,6 +82,7 @@ button img {
   border-radius: 2px;
   border: 1px solid #FFFFFF;
   display: flex;
+  font-family: 'Gilroy', sans-serif;
 }
 
 .btn-hover a:hover {
@@ -104,6 +105,7 @@ button img {
 }
 
 .button-yellow a {
+  font-family: 'Gilroy', sans-serif;
   color: #222222;
 }
 
@@ -131,10 +133,11 @@ button img {
   color: #FFFFFF;
   padding-bottom: 16px;
   border-bottom: 1px solid transparent;
+  font-size: 18px;
 }
 
 .header__nav-list a:hover {
-  border-bottom: 1px solid #FAD949;
+  border-bottom: 2px solid #FAD949;
 }
 
 .header__call {
@@ -330,6 +333,7 @@ button img {
 }
 
 .hot-sale__card-btn button a {
+  font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   color: #FFFFFF;
   text-decoration: none;
@@ -364,7 +368,6 @@ button img {
   font-weight: 300;
   font-size: 20px;
 }
-
 
 .advantages__cards {
   display: flex;
@@ -434,6 +437,7 @@ button img {
 }
 
 .advantages__card-btn button a {
+  font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   color: #222222;
   text-decoration: none;
@@ -688,6 +692,7 @@ button img {
 }
 
 .calculator__card-form--btn button a {
+  font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   color: #FFFFFF;
   text-decoration: none;
@@ -733,6 +738,7 @@ button img {
   width: 388px;
   padding: 16px;
   font-size: 18px;
+  font-family: 'Gilroy', sans-serif;
 }
 
 input[type=submit] {
@@ -743,6 +749,7 @@ input[type=submit] {
   border-radius: 2px;
   color: #FFFFFF;
   font-size: 18px;
+  font-family: 'Gilroy', sans-serif;
 }
 
 input[type=submit]:hover {
@@ -876,6 +883,7 @@ input[type=submit]:hover {
   width: 388px;
   padding: 16px;
   font-size: 18px;
+  font-family: 'Gilroy', sans-serif;
 }
 
 .order-block__form form {
