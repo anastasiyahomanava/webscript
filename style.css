@@ -242,6 +242,24 @@ button img {
   background: #FAD949 url(./assets/img/second-block/3.png) no-repeat center top/cover;
 }
 
+.four-card {
+  background: #FAD949 url(./assets/img/second-block/4.png) no-repeat center top/cover;
+}
+
+.five-card {
+  background: #FAD949 url(./assets/img/second-block/5.png) no-repeat center top/cover;
+}
+
+.six-card {
+  background: #FAD949 url(./assets/img/second-block/6.png) no-repeat center top/cover;
+}
+
+.four-card,
+.five-card,
+.six-card {
+  display: none;
+}
+
 /* ТОП ПРЕДЛОЖЕНИЯ МЕСЯЦА */
 
 .hot-sale {
