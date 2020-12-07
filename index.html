@@ -80,43 +80,49 @@
         <p>Мы обладаем рядом преимуществ и можем смело заявить<br>
           о своей конкурентоспособности на рынке маркетинговых и IT-услуг</p>
       </div>
-      <div class="about-us__cards">
-        <div class="about-us__card first-card">
-          <div class="about-us__card-text">
-            <h3>Гарантия<br>качества.</h3>
-            <p>У нас работают только профессионалы, любящие своё дело и каждый стремится сделать продукт лучше</p>
+      <div class="about-us__cards-container">
+        <div class="about-us__cards">
+          <div class="about-us__card first-card">
+            <div class="about-us__card-text">
+              <h3>Гарантия<br>качества.</h3>
+              <p>У нас работают только профессионалы, любящие своё дело и каждый стремится сделать продукт лучше</p>
+            </div>
+          </div>
+          <div class="about-us__card second-card">
+            <div class="about-us__card-text">
+              <h3>Уникальный<br>дизайн.</h3>
+              <p>Мы создаем только уникальный дизайн для каждого клиента
+                и не используем готовые шаблоны</p>
+            </div>
+          </div>
+          <div class="about-us__card third-card">
+            <div class="about-us__card-text">
+              <h3>Креативный<br>подход.</h3>
+              <p>Поможем вам развить идею по продвижению вашего продукта на рынке среди конкурентов</p>
+            </div>
+          </div>
+          <div class="about-us__card four-card">
+            <div class="about-us__card-text">
+              <h3>Мобильная<br>версия.</h3>
+              <p>Вам не нужно доплачивать за мобильную версию сайта, мы сразу разрабатываем сайт под все устройства</p>
+            </div>
+          </div>
+          <div class="about-us__card five-card">
+            <div class="about-us__card-text">
+              <h3>Поиск<br>клиентов.</h3>
+              <p>Найдём и привлечём новых клиентов для вашего бизнеса</p>
+            </div>
+          </div>
+          <div class="about-us__card six-card">
+            <div class="about-us__card-text">
+              <h3>Честная<br>стоимость.</h3>
+              <p>Мы не берем деньги за некачественный продукт, так же у нас действует гибкая система скидок</p>
+            </div>
           </div>
         </div>
-        <div class="about-us__card second-card">
-          <div class="about-us__card-text">
-            <h3>Уникальный<br>дизайн.</h3>
-            <p>Мы создаем только уникальный дизайн для каждого клиента 
-              и не используем готовые шаблоны</p>
-          </div>
-        </div>
-        <div class="about-us__card third-card">
-          <div class="about-us__card-text">
-            <h3>Креативный<br>подход.</h3>
-            <p>Поможем вам развить идею по продвижению вашего продукта на рынке среди конкурентов</p>
-          </div>
-        </div>
-        <div class="about-us__card four-card">
-          <div class="about-us__card-text">
-            <h3>Мобильная<br>версия.</h3>
-            <p>Вам не нужно доплачивать за мобильную версию сайта, мы сразу разрабатываем сайт под все устройства</p>
-          </div>
-        </div>
-        <div class="about-us__card five-card">
-          <div class="about-us__card-text">
-            <h3>Поиск<br>клиентов.</h3>
-            <p>Найдём и привлечём новых клиентов для вашего бизнеса</p>
-          </div>
-        </div>
-        <div class="about-us__card six-card">
-          <div class="about-us__card-text">
-            <h3>Честная<br>стоимость.</h3>
-            <p>Мы не берем деньги за некачественный продукт, так же у нас действует гибкая система скидок</p>
-          </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
     </div>
@@ -412,17 +418,17 @@
 
         <div class="portfolio__card">
           <div class="portfolio__card-back">
-            <img src="./assets/img/project-1.png">
+            <img src="./assets/img/projects/project-1.png">
           </div>
           <div class="portfolio__card-front one">
             <h3>1.<br>Проект Брендинг</h3>
-            <p>Разработка логотипа, визиток и фирменного стиля для мастера ногтевого сервиса – <b>Юлии Махнач</b></p>
+            <p>Разработка логотипа, визиток и фирменного стиля для мастера – <b>Nadzeya Pro</b></p>
           </div>
         </div>
 
         <div class="portfolio__card portfolio__card-hidden-card-mob">
           <div class="portfolio__card-back">
-            <img src="./assets/img/project-2.png">
+            <img src="./assets/img/projects/project-2.png">
           </div>
           <div class="portfolio__card-front two">
             <h3>2.<br>Проект Брендинг</h3>
@@ -432,7 +438,7 @@
 
         <div class="portfolio__card portfolio__card-hidden-card">
           <div class="portfolio__card-back">
-            <img src="./assets/img/project-3.png">
+            <img src="./assets/img/projects/project-3.png">
           </div>
           <div class="portfolio__card-front three">
             <h3>3.<br>Проект Landing</h3>
@@ -548,77 +554,84 @@
       <div class="feedback__heading">
         <h2>Что о нас говорят клиенты?</h2>
       </div>
-      <div class="feedback__cards">
+      <div class="feedback__cards-container">
+        <div class="feedback__cards">
 
-        <div class="feedback__card">
-          <img src="./assets/img/client-man.png" alt="client-man">
-          <div class="feedback__card-text">
-            <div class="feedback__card-text_heading">
-              <h4>Николаев<br>Олег.</h4>
-              <p>Индивидуальный предприниматель</p>
-            </div>
-            <div class="feedback__card-text_message">
-              <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
-                доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-            </div>
-            <div class="feedback__card-social">
-              <ul>
-                <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
-                </li>
-              </ul>
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="feedback__card">
-          <img src="./assets/img/client-woman.png" alt="client-man">
-          <div class="feedback__card-text">
-            <div class="feedback__card-text_heading">
-              <h4>Николаев<br>Олег.</h4>
-              <p>Индивидуальный предприниматель</p>
-            </div>
-            <div class="feedback__card-text_message">
-              <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
-                доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-            </div>
-            <div class="feedback__card-social">
-              <ul>
-                <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="feedback__card">
-          <img src="./assets/img/client-man.png" alt="client-man">
-          <div class="feedback__card-text">
-            <div class="feedback__card-text_heading">
-              <h4>Николаев<br>Олег.</h4>
-              <p>Индивидуальный предприниматель</p>
-            </div>
-            <div class="feedback__card-text_message">
-              <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
-                доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-            </div>
-            <div class="feedback__card-social">
-              <ul>
-                <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
-                </li>
-              </ul>
+  
+          <div class="feedback__card">
+            <img src="./assets/img/client-woman.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+  
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
         </div>
-
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
       </div>
     </div>
   </section>

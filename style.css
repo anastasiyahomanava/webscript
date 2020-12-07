@@ -236,6 +236,10 @@ button img {
 .about-us__cards {
   display: flex;
   justify-content: space-between;
+}
+
+.about-us__cards-container,
+.feedback__cards-container {
   padding-bottom: 120px;
 }
 
@@ -860,10 +864,13 @@ input[type=submit]:hover {
 }
 
 .feedback__cards {
-  padding-bottom: 120px;
   display: flex;
   width: 1136px;
   overflow: hidden;
+}
+
+.feedback__cards-container {
+  padding-bottom: 120px;
 }
 
 .feedback__card {
@@ -1116,7 +1123,8 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .working-process__heading,
   .portfolio__heading,
   .feedback__heading h2,
-  .order-block__heading {
+  .order-block__heading,
+  .about-us__heading {
     padding: 64px 0 32px;
   }
 
@@ -1250,10 +1258,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     width: 300px;
   }
 
-  .hot-sale__card-container {
-    padding: 24px 200px;
-  }
-
   .hot-sale__card h3 {
     font-size: 24px;
     line-height: 120%;
@@ -1324,7 +1328,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .portfolio__items,
   .offer__form,
-  .feedback__cards,
+  .feedback__cards-container,
   .hot-sale__items,
   .order-block {
     padding-bottom: 80px;
@@ -1468,7 +1472,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     font-size: 16px;
   }
 
-  .about-us__cards {
+  .about-us__cards-container {
     padding-bottom: 80px;
   }
 
@@ -1487,6 +1491,10 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .hot-sale__card {
     width: 688px;
+  }
+
+  .hot-sale__card-container {
+    padding: 24px 200px;
   }
 
   .hot-sale__card:not(:last-child) {
@@ -1637,7 +1645,8 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     justify-content: center;
   }
 
-  .about-us__card, .portfolio__card {
+  .about-us__card,
+  .portfolio__card {
     width: 314px;
   }
 }
@@ -1798,6 +1807,11 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     margin-right: 0px;
   }
 
+  .about-us__card,
+  .portfolio__card {
+    width: 100%;
+  }
+
   .second-card,
   .third-card,
   .four-card,
@@ -1805,4 +1819,27 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .six-card {
     display: none;
   }
+}
+
+/* DOTS */
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: #E0E0E0;
+  border-radius: 50%;
+}
+
+.dot:not(:last-child) {
+  margin-right: 8px;
+}
+
+.feedback__cards-container .dot {
+  background: #ffffff;
 }
