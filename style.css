@@ -1464,12 +1464,24 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .about-us__heading h2,
-  .hot-sale__heading {
+  .hot-sale__heading,
+  .advantages__heading h2,
+  .working-process__heading,
+  .portfolio__heading,
+  .calculator__heading h2,
+  .offer__heading h2,
+  .promo-video__heading h2,
+  .feedback__heading h2,
+  .order-block__heading {
     font-size: 32px;
+    text-align: center;
   }
 
-  .about-us__heading p {
+  .about-us__heading p,
+  .advantages__heading p,
+  .calculator__heading p {
     font-size: 16px;
+    text-align: center;
   }
 
   .about-us__cards-container {
@@ -1585,6 +1597,10 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .order-block__form input[type=submit] {
     width: 380px;
     height: 57px;
+  }
+
+  .order-block__flex-container {
+    justify-content: center;
   }
 }
 
