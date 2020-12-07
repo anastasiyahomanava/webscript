@@ -235,6 +235,7 @@ button img {
 
 .about-us__cards {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 120px;
 }
 
@@ -248,9 +249,9 @@ button img {
   box-shadow: 0px 2px 30px rgba(105, 102, 95, 0.2);
 }
 
-.about-us__card:not(:last-child) {
+/* .about-us__card:not(:last-child) {
   margin-right: 16px;
-}
+} */
 
 .about-us__card-text {
   padding-top: 140px;
@@ -1250,7 +1251,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .hot-sale__card-container {
-    padding: 24px;
+    padding: 24px 200px;
   }
 
   .hot-sale__card h3 {
@@ -1467,9 +1468,25 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     font-size: 16px;
   }
 
+  .about-us__cards {
+    padding-bottom: 80px;
+  }
+
+  .about-us__card {
+    width: 334px;
+  }
+
+  .third-card {
+    display: none;
+  }
+
   .hot-sale__items {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hot-sale__card {
+    width: 688px;
   }
 
   .hot-sale__card:not(:last-child) {
@@ -1583,6 +1600,45 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .working-process__card:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .hot-sale__card-container {
+    padding: 24px;
+  }
+
+  .hot-sale__card {
+    width: 300px;
+  }
+
+  .offer__form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__heading h2,
+  .working-process__heading,
+  .portfolio__heading,
+  .calculator__heading h2,
+  .offer__heading h2,
+  .promo-video__heading h2,
+  .feedback__heading h2,
+  .order-block__heading {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .advantages__heading p,
+  .calculator__heading p {
+    text-align: center;
+  }
+
+  .order-block__flex-container {
+    justify-content: center;
+  }
+
+  .about-us__card, .portfolio__card {
+    width: 314px;
   }
 }
 
