@@ -111,7 +111,7 @@ button img {
 
 .main-screen {
   height: 100vh;
-  background: #222222 url(./assets/img/background-main.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/background-main-2.png) no-repeat center top/cover;
 }
 
 .header {
@@ -150,6 +150,48 @@ button img {
 }
 
 .header__call a {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.header-hide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  display: none;
+}
+
+.header-hide__nav-list {
+  display: flex;
+}
+
+.header-hide__nav-list li:not(:last-child) {
+  padding-right: 32px;
+}
+
+.header-hide__nav-list a {
+  color: #FFFFFF;
+  padding-bottom: 16px;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+}
+
+.header-hide_nav-list a:hover {
+  border-bottom: 2px solid #FAD949;
+}
+
+.header-hide__call {
+  display: flex;
+  align-items: center;
+}
+
+.header-hide__call:hover {
+  cursor: pointer;
+}
+
+.header-hide__call a {
   color: #FFFFFF;
   font-size: 20px;
   padding-left: 8px;
@@ -283,6 +325,7 @@ button img {
 }
 
 .hot-sale__card:hover {
+  -webkit-filter: drop-shadow(0px 4px 15px #dbb03a);
   filter: drop-shadow(0px 4px 15px #dbb03a);
 }
 
@@ -570,6 +613,7 @@ button img {
   top: 0;
   display: flex;
   transition: 1s;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 4px;
   background: #FFFFFF;
@@ -796,6 +840,7 @@ input[type=submit]:hover {
 
 .promo-video__video video {
   width: 80%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -826,6 +871,7 @@ input[type=submit]:hover {
   border-radius: 2px;
   width: 752px;
   height: 460px;
+  -webkit-filter: drop-shadow(0px 4px 15px #dbb03a);
   filter: drop-shadow(0px 4px 15px #dbb03a);
   margin-right: 20px;
 }
@@ -874,7 +920,7 @@ input[type=submit]:hover {
 /* ФОРМА ЗАКАЗА */
 
 .order-block {
-  background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/black-bg-2.png) no-repeat center top/cover;
   padding-bottom: 120px;
 }
 
@@ -889,7 +935,7 @@ input[type=submit]:hover {
 .order-block__form {
   background: linear-gradient(206.08deg, #FAD949 -70.14%, #F7C644 267.69%);
   border-radius: 2px;
-  width: 593px;
+  width: 550px;
   color: #222222;
 }
 
@@ -940,7 +986,7 @@ input[type=submit]:hover {
 
 .order-block__text h4 {
   font-weight: 400;
-  padding: 72px 0 16px;
+  padding: 72px 0 24px;
   color: #ffd109;
 }
 
@@ -988,7 +1034,6 @@ input[type=submit]:hover {
 
 .order-block__flex-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -1019,9 +1064,14 @@ input[type=submit]:hover {
   color: #FFFFFF;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .main-screen__text h1 {
     font-size: 40px;
+  }
+
+  .main-screen__social ul {
+    padding-bottom: 64px;
   }
 
   .button-transparent i {
@@ -1131,6 +1181,10 @@ input[type=submit]:hover {
     padding: 64px 0 32px;
   }
 
+  .order-block__form {
+    max-width: 495px;
+  }
+
   .order-block__form form {
     padding: 52px;
   }
@@ -1147,6 +1201,11 @@ input[type=submit]:hover {
   .order-block__text {
     font-size: 24px;
     line-height: 120%;
+  }
+
+  .order-block__call,
+  .order-block__adress {
+    padding-bottom: 8px;
   }
 }
 
