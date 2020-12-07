@@ -1697,4 +1697,13 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .advantages__heading p {
     display: none;
   }
+
+  .banner-img img {
+    display: none;
+  }
+
+  .banner-img {
+    height: 624px;
+    background: #FFD109 url(./assets/img/sale-banner-mobile.png) no-repeat center top/cover;
+  }
 }
