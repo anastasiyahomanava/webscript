@@ -1706,4 +1706,8 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     height: 624px;
     background: #FFD109 url(./assets/img/sale-banner-mobile.png) no-repeat center top/cover;
   }
+
+  .main-screen__social ul {
+    padding-bottom: 40px;
+  }
 }
