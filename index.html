@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,23 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/b1ee37085b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title>webscript</title>
+  <title>Разработка и доработка сайтов | Webscript.by</title>
 </head>
 
 <body>
+  <!-- Добавил главный общий блок с id -->
+  <div id =  "block">
+
   <div class="main-screen">
     <div class="container">
       <div class="main-screen__flex-container">
+        <header class="header-hide">
+          <div class="header__logo">
+            <a href="#"><img src="./assets/icons/header-logo.svg" alt="webscript"></a>
+          </div>
+          <nav class="header-hide__nav">
+            <ul class="header-hide__nav-list">
+              <li><a href="#About-us">О студии</a></li>
+              <li><a href="#Advantages">Услуги</a></li>
+              <li><a href="#Calculator">Цены</a></li>
+              <li><a href="#Portfolio">Проекты</a></li>
+              <li><a href="#Order-form">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header-hide__call">
+            <img src="./assets/icons/call.png" alt="call">
+            <a href="tel:+375293852508">+375 (29) 385 25 08</a>
+          </div>
+        </header>
         <header class="header">
           <div class="header__logo">
             <a href="#"><img src="./assets/icons/header-logo.svg" alt="webscript"></a>
           </div>
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li><a href="#">Преимущества</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Цены</a></li>
-              <li><a href="#">Портфолио</a></li>
+              <li><a href="#About-us">О студии</a></li>
+              <li><a href="#Advantages">Услуги</a></li>
+              <li><a href="#Calculator">Цены</a></li>
+              <li><a href="#Portfolio">Проекты</a></li>
               <li><a href="#Order-form">Контакты</a></li>
             </ul>
           </nav>
@@ -32,27 +53,83 @@
           </div>
         </header>
         <div class="main-screen__text">
-          <h1>Мы предоставляем маркетинговые<br>и IT-услуги в Беларуси.</h1>
+          <h1>Мы предоставляем<br>маркетинговые и IT-услуги<br>в Беларуси.</h1>
           <p>Качественная разработка и доработка сайтов, уникальный дизайн,<br>настройка рекламы и привлечение целевой
             аудитории, приятные бонусы<br>и круглосуточная техподдержка</p>
           <div class="main-screen__text-buttons">
-            <button class="button-transparent btn-hover"><a href="#">Посмотреть видео<i
+            <button class="button-transparent btn-hover"><a href="#Promo-video">Посмотреть видео<i
                   class="far fa-play-circle btn-hover"></i></a></button>
-            <button class="button-yellow"><a href="#Order-form">Сделать заказ</a><img src="./assets/icons/arrow-black.svg"
-                alt="video"></button>
+            <button class="button-yellow"><a href="#Order-form">Сделать заказ</a><img
+                src="./assets/icons/arrow-black.svg" alt="video"></button>
           </div>
         </div>
         <div class="main-screen__social">
           <ul>
-            <li><a href="#"><i class="fab fa-viber"></i></a></li>
-            <li><a href="#"><i class="fab fa-vk"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
+            <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
+            <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <section class="about-us" id="About-us">
+    <div class="container">
+      <div class="about-us__heading">
+        <h2>Почему выбирают нас?</h2>
+        <p>Мы обладаем рядом преимуществ и можем смело заявить<br>
+          о своей конкурентоспособности на рынке маркетинговых и IT-услуг</p>
+      </div>
+      <div class="about-us__cards-container">
+        <div class="about-us__cards">
+          <div class="about-us__card first-card">
+            <div class="about-us__card-text">
+              <h3>Гарантия<br>качества.</h3>
+              <p>У нас работают только профессионалы, любящие своё дело и каждый стремится сделать продукт лучше</p>
+            </div>
+          </div>
+          <div class="about-us__card second-card">
+            <div class="about-us__card-text">
+              <h3>Уникальный<br>дизайн.</h3>
+              <p>Мы создаем только уникальный дизайн для каждого клиента
+                и не используем готовые шаблоны</p>
+            </div>
+          </div>
+          <div class="about-us__card third-card">
+            <div class="about-us__card-text">
+              <h3>Креативный<br>подход.</h3>
+              <p>Поможем вам развить идею по продвижению вашего продукта на рынке среди конкурентов</p>
+            </div>
+          </div>
+          <div class="about-us__card four-card">
+            <div class="about-us__card-text">
+              <h3>Мобильная<br>версия.</h3>
+              <p>Вам не нужно доплачивать за мобильную версию сайта, мы сразу разрабатываем сайт под все устройства</p>
+            </div>
+          </div>
+          <div class="about-us__card five-card">
+            <div class="about-us__card-text">
+              <h3>Поиск<br>клиентов.</h3>
+              <p>Найдём и привлечём новых клиентов для вашего бизнеса</p>
+            </div>
+          </div>
+          <div class="about-us__card six-card">
+            <div class="about-us__card-text">
+              <h3>Честная<br>стоимость.</h3>
+              <p>Мы не берем деньги за некачественный продукт, так же у нас действует гибкая система скидок</p>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="hot-sale">
     <div class="container">
@@ -66,7 +143,7 @@
             </div>
             <div class="hot-sale__card-price">
               <img src="./assets/icons/sale.png" alt="sale-icon">
-              <h3>от 799 рублей</h3>
+              <h3>от 699 рублей</h3>
             </div>
             <div class="hot-sale__card-list">
               <ul>
@@ -78,8 +155,7 @@
               </ul>
             </div>
             <div class="hot-sale__card-btn">
-              <button><a href="#Order-form"> Обсудить проект</a><img src="./assets/icons/arrow.svg"
-                  alt="arrow"></button>
+              <button><a href="#Order-form">Обсудить проект</a><img src="./assets/icons/arrow.svg" alt="arrow"></button>
             </div>
           </div>
         </div>
@@ -91,20 +167,19 @@
             </div>
             <div class="hot-sale__card-price">
               <img src="./assets/icons/sale.png" alt="sale-icon">
-              <h3>от 299 рублей</h3>
+              <h3>от 199 рублей</h3>
             </div>
             <div class="hot-sale__card-list">
               <ul>
                 <li><i class="fas fa-check"></i>Раскрывает преимущества услуги</li>
                 <li><i class="fas fa-check"></i>Направлен на конкретную ЦА</li>
-                <li><i class="fas fa-check"></i>Помогает “продать” вашу услугу</li>
+                <li><i class="fas fa-check"></i>Помогает «продать» вашу услугу</li>
                 <li><i class="fas fa-check"></i>Разработка под все устройства</li>
                 <li><i class="fas fa-check"></i>Первичная SEO-оптимизация</li>
               </ul>
             </div>
             <div class="hot-sale__card-btn">
-              <button><a href="#Order-form"> Обсудить проект</a><img src="./assets/icons/arrow.svg"
-                  alt="arrow"></button>
+              <button><a href="#Order-form">Обсудить проект</a><img src="./assets/icons/arrow.svg" alt="arrow"></button>
             </div>
           </div>
         </div>
@@ -112,11 +187,12 @@
           <div class="hot-sale__card-container">
             <div class="hot-sale__card-heading">
               <h3>Продвижение<br>и реклама.</h3>
-              <p>Продвижение ваших услуг<br>(SEO, SMM и SMS-рассылка)</p>
+              <p>Продвижение ваших услуг<br>(<strong>SEO</strong>, <strong>SMM</strong> и <strong>SMS-рассылка</strong>)
+              </p>
             </div>
             <div class="hot-sale__card-price">
               <img src="./assets/icons/sale.png" alt="sale-icon">
-              <h3>от 99 рублей</h3>
+              <h3>от 49 рублей</h3>
             </div>
             <div class="hot-sale__card-list">
               <ul>
@@ -128,8 +204,7 @@
               </ul>
             </div>
             <div class="hot-sale__card-btn">
-              <button><a href="#Order-form"> Обсудить проект</a><img src="./assets/icons/arrow.svg"
-                  alt="arrow"></button>
+              <button><a href="#Order-form">Обсудить проект</a><img src="./assets/icons/arrow.svg" alt="arrow"></button>
             </div>
           </div>
         </div>
@@ -137,7 +212,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages" id="Advantages">
     <div class="container">
       <div class="advantages__heading">
         <h2>Что мы умеем?</h2>
@@ -151,16 +226,16 @@
               <h3>Разработка.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>Верстка Landing Page</li>
-              <li>Адаптивная верстка</li>
-              <li>Разработка интернет-магазина</li>
-              <li>Работа с базой данных</li>
-              <li>Доработка сайтов</li>
-              <li>Комплексная разработка</li>
+              <li><span>Landing Page</span></li>
+              <li><span>Адаптивная верстка</span></li>
+              <li><span>Разработка интернет-магазина</span></li>
+              <li><span>Работа с базами данных</span></li>
+              <li><span>Доработка сайтов</span></li>
+              <!-- <li>Комплексная разработка</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
               <h3>от 199 рублей</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -168,23 +243,23 @@
             </div>
           </div>
         </div>
-        <div class="advantages__card">
+        <div class="advantages__card card-margin-center">
           <div class="advantages__card-content">
             <div class="advantages__card-heading">
               <!-- <img src="./assets/icons/adv-2.png" alt="develop"> -->
               <h3>Дизайн.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>Индивидуальный дизайн</li>
-              <li>Проектирование веб-сайтов</li>
-              <li>Дизайн Landing Page</li>
-              <li>UX/UI дизайн</li>
-              <li>Дизайн полиграфии</li>
-              <li>Брендинг и многое другое</li>
+              <li><span>Индивидуальный дизайн</span></li>
+              <li><span>Проектирование веб-сайтов</span></li>
+              <li><span>Дизайн Landing Page</span></li>
+              <li><span>UX/UI дизайн</span></li>
+              <li><span>Дизайн полиграфии</span></li>
+              <!-- <li>Брендинг и многое другое</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
-              <h3>от 20 рублей</h3>
+              <h3>от 25 рублей</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -192,23 +267,23 @@
             </div>
           </div>
         </div>
-        <div class="advantages__card">
+        <div class="advantages__card card-margin">
           <div class="advantages__card-content">
             <div class="advantages__card-heading">
               <!-- <img src="./assets/icons/adv-3.png" alt="develop"> -->
               <h3>Продвижение.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>SMM (Реклама в соцсетях)</li>
-              <li>SEO-продвижение</li>
-              <li>Viber и SMS-рассылка</li>
-              <li>Таргетинг</li>
-              <li>Контекстная реклама</li>
-              <li>Бесплатная консультация</li>
+              <li><span>SMM (Реклама в соцсетях)</span></li>
+              <li><span>SEO-продвижение</span></li>
+              <li><span>Viber и SMS-рассылка</span></li>
+              <li><span>Таргетинг</span></li>
+              <li><span>Контекстная реклама</span></li>
+              <!-- <li>Бесплатная консультация</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
-              <h3>от 50 рублей</h3>
+              <h3>от 49 рублей</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -223,16 +298,16 @@
               <h3>Поиск клиентов.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>Анализ целевой аудитории</li>
-              <li>Привлечение новых клиентов</li>
-              <li>Оценка потребностей клиентов</li>
-              <li>Разработка под конкретную ЦА</li>
-              <li>Анализ конкурентов</li>
-              <li>Бесплатная консультация</li>
+              <li><span>Анализ конкурентов</span></li>
+              <li><span>Анализ целевой аудитории</span></li>
+              <li><span>Привлечение новых клиентов</span></li>
+              <li><span>Оценка потребностей клиентов</span></li>
+              <li><span>Разработка под конкретную ЦА</span></li>
+              <!-- <li>Бесплатная консультация</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
-              <h3>от 99 рублей</h3>
+              <h3>от 67 рублей</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -247,16 +322,16 @@
               <h3>Видео-реклама.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>Съемка видеороликов</li>
-              <li>Видео-дизайн</li>
-              <li>Креативная реклама</li>
-              <li>Промо-видео</li>
-              <li>Рекламные ролики</li>
-              <li>От идеи до создания</li>
+              <li><span>Съемка видеороликов</span></li>
+              <li><span>Видео-дизайн</span></li>
+              <li><span>Креативная реклама</span></li>
+              <li><span>Промо-видео</span></li>
+              <li><span>Видео-реклама</span></li>
+              <!-- <li>От идеи до создания</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
-              <h3>от 190 рублей</h3>
+              <h3>от 187 рублей</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -271,16 +346,16 @@
               <h3>Техподдержка.</h3>
             </div>
             <ul class="advantages__card-list">
-              <li>Бесплатный хостинг</li>
-              <li>Круглосуточная техподдержка</li>
-              <li>Исправление ошибок на сайте</li>
-              <li>Помощь с формами</li>
-              <li>Помощь в размещении контента</li>
-              <li>Бесплатные консультации</li>
+              <li><span>Бесплатный хостинг</span></li>
+              <li><span>Круглосуточная техподдержка</span></li>
+              <li><span>Исправление ошибок на сайте</span></li>
+              <li><span>Помощь с формами</span></li>
+              <li><span>Помощь в размещении контента</span></li>
+              <!-- <li>Бесплатные консультации</li> -->
             </ul>
             <div class="advantages__card-price">
-              <img src="./assets/icons/icon-cost.png" alt="price">
               <h3>Бесплатно!</h3>
+              <img src="./assets/icons/icon-price-orange.svg" alt="price">
             </div>
             <div class="advantages__card-btn">
               <button><a href="#Calculator">Рассчитать стоимость</a><img src="./assets/icons/arrow-black-cost.svg"
@@ -318,22 +393,19 @@
         <div class="working-process__card">
           <img src="./assets/icons/working-process-icon-2.svg" alt="Знакомство">
           <h4>Исследование<br>и обсуждение</h4>
-          <p>Оставляете заявку на звонок на сайте или
-            в соцсетях, либо звоните нам по телефону</p>
+          <p>Проводим исследование задачи, анализируем конкурентов и приступаем к работе</p>
         </div>
 
         <div class="working-process__card">
           <img src="./assets/icons/working-process-icon-3.svg" alt="Знакомство">
           <h4>Процесс разработки</h4>
-          <p>Оставляете заявку на звонок на сайте или
-            в соцсетях, либо звоните нам по телефону</p>
+          <p>Занимаемся работой над проектом, показывая промежуточные результаты</p>
         </div>
 
         <div class="working-process__card">
           <img src="./assets/icons/working-process-icon-4.svg" alt="Знакомство">
           <h4>Счастливый клиент!</h4>
-          <p>Оставляете заявку на звонок на сайте или
-            в соцсетях, либо звоните нам по телефону</p>
+          <p>Презентация клиенту готового результата, закрытие последних вопросов и оплата</p>
         </div>
 
       </div>
@@ -342,36 +414,36 @@
 
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="Portfolio">
     <div class="container">
-      <h2 class="portfolio__heading">Наши последние работы</h2>
+      <h2 class="portfolio__heading">Наши последние проекты</h2>
       <div class="portfolio__items">
 
         <div class="portfolio__card">
-          <div class="front">
-            <img src="./assets/img/project-1.png">
+          <div class="portfolio__card-back">
+            <img src="./assets/img/projects/project-1.png">
           </div>
-          <div class="back">
+          <div class="portfolio__card-front one">
             <h3>1.<br>Проект Брендинг</h3>
-            <p>Разработка логотипа, визиток и фирменного стиля для мастера ногтевого сервиса – <b>Юлии Махнач</b></p>
+            <p>Разработка логотипа, визиток и фирменного стиля для мастера – <b>Nadzeya Pro</b></p>
           </div>
         </div>
 
-        <div class="portfolio__card">
-          <div class="front">
-            <img src="./assets/img/project-2.png">
+        <div class="portfolio__card portfolio__card-hidden-card-mob">
+          <div class="portfolio__card-back">
+            <img src="./assets/img/projects/project-2.png">
           </div>
-          <div class="back">
+          <div class="portfolio__card-front two">
             <h3>2.<br>Проект Брендинг</h3>
             <p>Разработка логотипа, визиток и фирменного стиля для креативного фотографа – <b>Светы Сметана</b></p>
           </div>
         </div>
 
-        <div class="portfolio__card">
-          <div class="front">
-            <img src="./assets/img/project-3.png">
+        <div class="portfolio__card portfolio__card-hidden-card">
+          <div class="portfolio__card-back">
+            <img src="./assets/img/projects/project-3.png">
           </div>
-          <div class="back">
+          <div class="portfolio__card-front three">
             <h3>3.<br>Проект Landing</h3>
             <p>Разработка брендинга и Landing page для <b>Retrobill</b> – услуги по аренде ретро-авто</p>
           </div>
@@ -436,7 +508,7 @@
 
                 <div class="calculator__card-form--btn">
                   <button type="submit"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
-                    alt="arrow"></button>
+                      alt="arrow"></button>
                 </div>
 
               </form>
@@ -450,33 +522,181 @@
     </div>
   </section>
 
-  <section class="order-block" id="Order-form">
+  <section class="offer">
     <div class="container">
-      <h2 class="order-block__heading">Обсудим проект?</h2>
-      <div class="order-block__form">
+
+      <div class="offer__heading">
+        <h2>Хотите получить консультацию?</h2>
+        <p>Оставьте свой номер телефона и наш консультант свяжется с вами в ближайшее время</p>
+      </div>
+
+      <div class="offer__form">
         <form action="#">
-          <h4>Мы вам перезвоним!</h4>
-          <div class="order-block__form-input">
-            <label for="name">Ваше имя</label>
-            <input type="text" placeholder="Как к вам можно обращаться?" id="name" required>
-          </div>
-          <div class="order-block__form-input">
-            <label for="phone">Ваш номер телефона</label>
-            <input type="text" placeholder="+375 (25) 123 45 67" id="phone" pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
-            required>
-          </div>
-          <div class="order-block__form-input">
-            <label for="textarea">Комментарий к заказу (не обязательно)</label>
-            <input type="text" placeholder="Тут вы можете оставить свой комментарий, либо задать вопрос консультанту"
-              id="textarea">
-          </div>
-          <p>После обработки заявки, наш специалист свяжется с вами<br>
-            в кратчайшие сроки по указанному номеру</p>
-          <div class="order-block-form--btn">
-            <input type="submit" value="Перезвоните мне">
-          </div>
+          <input type="text" placeholder="Введите ваш номер телефона">
+          <input type="submit" value="Заказать звонок">
         </form>
       </div>
+
+    </div>
+  </section>
+
+  <section class="promo-video" id="Promo-video">
+    <div class="container">
+      <div class="promo-video__heading">
+        <h2>Ещё не уверены?<br>Посмотрите наш промо-ролик</h2>
+      </div>
+      <div class="promo-video__video">
+        <video src="./assets/video/WebScript PROMO.mp4" controls
+          poster="./assets/img/webscript-video-cover.png"></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__heading">
+        <h2>Что о нас говорят клиенты?</h2>
+      </div>
+      <div class="feedback__cards-container">
+        <div class="feedback__cards">
+
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="feedback__card">
+            <img src="./assets/img/client-woman.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок, я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order-block" id="Order-form">
+    <div class="container">
+
+      <h2 class="order-block__heading">Обсудим проект?</h2>
+
+      <div class="order-block__flex-container">
+
+        <div class="order-block__form">
+          <form action="#">
+            <h4>Мы вам перезвоним!</h4>
+            <div class="order-block__form-input">
+              <label for="name">Ваше имя</label>
+              <input type="text" placeholder="Как к вам можно обращаться?" id="name" required>
+            </div>
+            <div class="order-block__form-input">
+              <label for="phone">Ваш номер телефона</label>
+              <input type="text" placeholder="+375 (25) 123 45 67" id="phone"
+                pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+            </div>
+            <div class="order-block__form-input">
+              <label for="textarea">Комментарий к заказу (не обязательно)</label>
+              <input type="text" placeholder="Тут вы можете оставить свой комментарий, либо задать вопрос консультанту"
+                id="textarea">
+            </div>
+            <p>После обработки заявки, наш специалист свяжется с вами
+              в кратчайшие сроки по указанному номеру</p>
+            <div class="order-block-form--btn">
+              <input type="submit" value="Перезвоните мне">
+            </div>
+          </form>
+        </div>
+
+        <div class="order-block__text">
+          <p>Заполните форму сейчас<br>
+            и получите скидку<br>
+            на первый заказ <span>-10%!</span>
+          </p>
+          <h4>Наши контакты</h4>
+          <div class="order-block__call">
+            <img src="./assets/icons/call.png" alt="call">
+            <a href="tel:+375293852508">+375 (29) 385 25 08</a>
+          </div>
+          <div class="order-block__adress">
+            <p><i class="fas fa-map-marker-alt"></i>Гомель, Беларусь</p>
+          </div>
+          <div class="order-block__social">
+            <ul>
+              <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
+              <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
+              <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -491,16 +711,19 @@
         </div>
         <div class="footer__social-links">
           <ul>
-            <li><a href="#"><i class="fab fa-viber"></i></a></li>
-            <li><a href="#"><i class="fab fa-vk"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
+            <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
+            <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-
+</div> <!-- blcock -->   
+  <script src="index.js"></script>
+  
 </body>
 
 </html>
