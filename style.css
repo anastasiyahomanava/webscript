@@ -1710,4 +1710,16 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .main-screen__social ul {
     padding-bottom: 40px;
   }
+
+  .about-us__card:not(:last-child) {
+    margin-right: 0px;
+}
+
+  .second-card,
+  .third-card,
+  .four-card,
+  .five-card,
+  .six-card {
+    display: none;
+  }
 }
