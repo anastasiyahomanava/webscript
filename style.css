@@ -32,7 +32,7 @@ button img {
 }
 
 .container {
-  max-width: 1136px;
+  width: 1136px;
   margin: 0 auto;
 }
 
@@ -161,11 +161,24 @@ button img {
   justify-content: space-between;
   height: 100px;
   display: none;
+  background-color: #000000;
+  width: 100%;
 }
 
-.header_active{
+.header-hide__flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header_active {
   display: flex;
   position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  z-index: 1;
 }
 
 .header-hide__nav-list {
@@ -183,7 +196,7 @@ button img {
   font-size: 18px;
 }
 
-.header-hide_nav-list a:hover {
+.header-hide__nav-list a:hover {
   border-bottom: 2px solid #FAD949;
 }
 
@@ -633,8 +646,6 @@ button img {
   transform: rotateY(180deg);
 }
 
-}
-
 .portfolio__card-front {
   transform: rotateY(180deg);
 }
@@ -872,7 +883,7 @@ input[type=submit]:hover {
   font-weight: 500;
   text-transform: uppercase;
   padding: 120px 0 80px;
-/* js */
+  /* js */
 }
 
 .feedback__cards {
@@ -1485,7 +1496,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .calculator__card-form h4 {
-/* js */
     font-size: 18px;
   }
 
@@ -1586,23 +1596,28 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     font-size: 48px;
   }
 
-  .header__logo img {
+  .header__logo img,
+  .header-hide__logo img {
     width: 88px;
   }
 
-  .header__nav-list a {
+  .header__nav-list a,
+  .header-hide__nav-list a {
     font-size: 12px;
   }
 
-  .header__call a {
+  .header__call a,
+  .header-hide__call a {
     font-size: 16px;
   }
 
-  .header__call img {
+  .header__call img,
+  .header-hide__call img {
     width: 16px;
   }
 
-  .header__nav-list li:not(:last-child) {
+  .header__nav-list li:not(:last-child),
+  .header-hide__nav-list li:not(:last-child) {
     padding-right: 16px;
   }
 
@@ -1815,7 +1830,8 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     width: 335px;
   }
 
-  .header__nav {
+  .header__nav,
+  .header-hide__nav {
     display: none;
   }
 
