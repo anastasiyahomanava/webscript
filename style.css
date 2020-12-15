@@ -1763,6 +1763,11 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 }
 
 @media screen and (max-width: 667px) {
+  .header__nav,
+  .header-hide__nav {
+    display: none;
+  }
+
   .advantages__cards {
     justify-content: center;
   }
@@ -1828,11 +1833,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 @media screen and (max-width: 375px) {
   .container {
     width: 335px;
-  }
-
-  .header__nav,
-  .header-hide__nav {
-    display: none;
   }
 
   .main-screen__text h1 {
