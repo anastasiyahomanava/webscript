@@ -111,7 +111,7 @@ button img {
 
 .main-screen {
   height: 100vh;
-  background: #222222 url(./assets/img/background-main-2.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/webscript-main-bg.png) no-repeat center top/cover;
 }
 
 .header {
@@ -951,7 +951,7 @@ input[type=submit]:hover {
 /* ФОРМА ЗАКАЗА */
 
 .order-block {
-  background: #222222 url(./assets/img/black-bg-2.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
   padding-bottom: 120px;
 }
 
@@ -1057,11 +1057,6 @@ input[type=submit]:hover {
 }
 
 /* ФОРМА ЗАКАЗА */
-
-.order-block {
-  background: #222222 url(./assets/img/black-bg-2.png) no-repeat center top/cover;
-  padding-bottom: 120px;
-}
 
 .order-block__heading {
   font-weight: 400;
