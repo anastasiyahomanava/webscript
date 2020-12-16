@@ -883,7 +883,6 @@ input[type=submit]:hover {
   font-weight: 500;
   text-transform: uppercase;
   padding: 120px 0 80px;
-  /* js */
 }
 
 .feedback__cards {
@@ -946,6 +945,30 @@ input[type=submit]:hover {
 
 .feedback__card-social ul a:hover {
   color: #455fff;
+}
+
+.feedback__cards-container {
+  padding-bottom: 120px;
+}
+
+.feedback__card-text {
+  padding: 60px 32px 0 32px;
+  width: 480px;
+}
+
+.feedback__card-text_heading {
+  padding-bottom: 24px;
+}
+
+.feedback__card-text_heading h4 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.feedback__card-text_heading p {
+  color: #222222;
+  opacity: 0.6;
+  font-size: 18px;
 }
 
 /* ФОРМА ЗАКАЗА */
@@ -954,109 +977,6 @@ input[type=submit]:hover {
   background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
   padding-bottom: 120px;
 }
-
-.order-block__heading {
-  font-weight: 400;
-  font-size: 48px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  padding: 120px 0 80px;
-}
-
-.order-block__form {
-  background: linear-gradient(206.08deg, #FAD949 -70.14%, #F7C644 267.69%);
-  border-radius: 2px;
-  width: 550px;
-  color: #222222;
-}
-
-.order-block__form label {
-  padding-bottom: 8px;
-}
-
-.order-block__form [type=text] {
-  width: 388px;
-  padding: 16px;
-  font-size: 18px;
-  font-family: 'Gilroy', sans-serif;
-}
-
-.order-block__form form {
-  display: flex;
-  flex-direction: column;
-  padding: 80px;
-}
-
-.order-block__form p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
-  padding-bottom: 40px;
-}
-
-.feedback__cards {
-  display: flex;
-  width: 1136px;
-  overflow: hidden;
-}
-
-.feedback__cards-container {
-  padding-bottom: 120px;
-}
-
-.feedback__card {
-  display: flex;
-  background-color: #FFFFFF;
-  border-radius: 2px;
-  width: 752px;
-  height: 460px;
-  -webkit-filter: drop-shadow(0px 4px 15px #dbb03a);
-  filter: drop-shadow(0px 4px 15px #dbb03a);
-  margin-right: 20px;
-}
-
-.feedback__card-text {
-  padding: 60px 32px 0 32px;
-  width: 480px;
-}
-
-.feedback__card-text_heading {
-  padding-bottom: 24px;
-}
-
-.feedback__card-text_heading h4 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.feedback__card-text_heading p {
-  color: #222222;
-  opacity: 0.6;
-  font-size: 18px;
-}
-
-.feedback__card-text_message {
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(34, 34, 34, 0.8);
-  padding-bottom: 24px;
-}
-
-.feedback__card-social ul {
-  display: flex;
-}
-
-.feedback__card-social ul a {
-  color: #151515;
-  padding-right: 16px;
-  font-size: 24px;
-}
-
-.feedback__card-social ul a:hover {
-  color: #455fff;
-}
-
-/* ФОРМА ЗАКАЗА */
 
 .order-block__heading {
   font-weight: 400;
