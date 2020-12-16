@@ -1853,7 +1853,9 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .button-transparent a {
-    padding: 16px 67px;
+    /* padding: 16px 67px; */
+    width: 100%;
+    justify-content: center;
   }
 
   .button-yellow {
