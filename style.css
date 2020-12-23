@@ -9,6 +9,8 @@
 body {
   font-family: 'Gilroy', sans-serif;
   color: #222222;
+  /* font-size: 18px;
+  font-weight: 300; */
 }
 
 ul {
@@ -252,9 +254,9 @@ form [type=text] {
 
 .about-us__heading p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 140%;
-  opacity: 0.8;
+  color: #222222cc;
 }
 
 .about-us__cards {
@@ -293,9 +295,9 @@ form [type=text] {
 }
 
 .about-us__card p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
-  line-height: 158%;
+  line-height: 140%;
   color: rgba(34, 34, 34, 0.8);
   width: 275px;
   padding-top: 16px;
@@ -362,14 +364,14 @@ form [type=text] {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .hot-sale__card p {
+  font-weight: 300;
   font-size: 18px;
   line-height: 140%;
-  color: #222222;
-  opacity: 0.8;
+  color: #222222cc;
 }
 
 .hot-sale__card h3 {
@@ -392,7 +394,7 @@ form [type=text] {
 .hot-sale__card-price {
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 24px 0;
 }
 
 .hot-sale__card-price h3 {
@@ -454,9 +456,11 @@ form [type=text] {
   padding-bottom: 8px;
 }
 
-.advantages__heading {
+.advantages__heading p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #222222cc;
 }
 
 .advantages__cards {
@@ -596,7 +600,7 @@ form [type=text] {
 }
 
 .working-process__card p {
-  line-height: 130%;
+  line-height: 140%;
   color: #222222a1;
 }
 
@@ -708,9 +712,11 @@ form [type=text] {
   padding-bottom: 8px;
 }
 
-.calculator__heading {
+.calculator__heading p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #222222cc;
 }
 
 .calculator__items {
@@ -732,10 +738,9 @@ form [type=text] {
 
 .calculator__card-form label {
   padding-left: 8px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(34, 34, 34, 0.8);
+  font-weight: 300;
+  font-size: 18px;
+  color: #222222cc;
 }
 
 .calculator__card-steps h4 {
@@ -821,6 +826,9 @@ form [type=text] {
 .offer p {
   font-size: 18px;
   text-align: center;
+  font-weight: 300;
+  line-height: 140%;
+  color: #222222cc;
 }
 
 .offer__form {
@@ -1225,6 +1233,9 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .advantages__card-list li:not(:last-child) {
     padding-bottom: 16px;
+  }
+
+  .advantages__card-list li {
     font-size: 16px;
   }
 
@@ -1279,7 +1290,8 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .feedback__cards-container,
   .portfolio__items,
   .calculator__items,
-  .offer__form, .order-block {
+  .offer__form,
+  .order-block {
     padding-bottom: 80px;
   }
 
@@ -1297,6 +1309,10 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .promo-video__heading h2 {
     padding-bottom: 32px;
+  }
+
+  .hot-sale__card p {
+    font-size: 16px;
   }
 }
 
