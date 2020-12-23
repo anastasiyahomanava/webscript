@@ -1691,9 +1691,9 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     width: 334px;
   }
 
-  .portfolio__card-hidden-card {
+  /* .portfolio__card-hidden-card {
     display: none;
-  }
+  } */
 
   .portfolio__card {
     width: 334px;
@@ -1831,9 +1831,9 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     justify-content: center;
   }
 
-  .portfolio__card-hidden-card-mob {
+  /* .portfolio__card-hidden-card-mob {
     display: none;
-  }
+  } */
 
   .calculator {
     display: none;

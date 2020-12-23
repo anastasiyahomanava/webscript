@@ -77,4 +77,6 @@ document.addEventListener("scroll", () => {
 
       }); 
 
+    }else{
+      document.getElementsByClassName("more_info")[0].style.display = "none"
     }
