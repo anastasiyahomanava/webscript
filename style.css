@@ -1,3 +1,5 @@
+@import "./assets/font/Gilroy/stylesheet.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -371,7 +373,7 @@ form [type=text] {
 }
 
 .hot-sale__card h3 {
-  font-family: Gilroy, sans-serif;
+  font-family: 'Gilroy', sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
