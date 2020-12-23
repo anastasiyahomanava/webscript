@@ -31,6 +31,10 @@ button img {
   padding-right: 8px;
 }
 
+form [type=text] {
+  border: none;
+}
+
 .container {
   width: 1136px;
   margin: 0 auto;
@@ -118,7 +122,7 @@ button img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 90px;
 }
 
 .header__nav-list {
@@ -159,7 +163,7 @@ button img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 90px;
   display: none;
   background-color: #000000;
   width: 100%;
@@ -177,8 +181,8 @@ button img {
   position: fixed;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  z-index: 1;
+  height: 90px;
+  z-index: 2;
 }
 
 .header-hide__nav-list {
@@ -337,7 +341,7 @@ button img {
   font-size: 48px;
   line-height: 59px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #222222;
   padding: 120px 0 80px;
 }
 
@@ -611,7 +615,7 @@ button img {
   font-size: 48px;
   line-height: 59px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #222222;
   padding: 120px 0 80px;
 }
 
@@ -878,7 +882,7 @@ input[type=submit]:hover {
 }
 
 .feedback__heading h2 {
-  color: #ffffff;
+  color: #222222;
   font-size: 48px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1007,21 +1011,21 @@ input[type=submit]:hover {
 .order-block__form form {
   display: flex;
   flex-direction: column;
-  padding: 80px;
+  padding: 64px 80px;
 }
 
 .order-block__form p {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .order-block__form h4 {
   font-weight: 400;
   font-size: 40px;
   line-height: 130%;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .order-block__form-input {
@@ -1093,6 +1097,10 @@ input[type=submit]:hover {
   align-items: center;
 }
 
+.order-block-form--btn input[type=submit] {
+  width: 100%;
+}
+
 /* FOOTER */
 
 .footer {
@@ -1103,7 +1111,7 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 24px 0;
 }
 
 .footer__social-links ul {
@@ -1127,7 +1135,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .main-screen__social ul {
-    padding-bottom: 64px;
+    padding-bottom: 80px;
   }
 
   .button-transparent i {
@@ -1171,7 +1179,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .feedback__heading h2,
   .order-block__heading,
   .about-us__heading {
-    padding: 64px 0 32px;
+    padding: 80px 0 32px;
   }
 
   .hot-sale__card-container {
@@ -1189,7 +1197,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .hot-sale__items {
-    padding-bottom: 64px;
+    padding-bottom: 80px;
   }
 
   .hot-sale__card-btn {
@@ -1197,11 +1205,11 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .advantages__heading {
-    padding: 64px 0 32px;
+    padding: 80px 0 32px;
   }
 
   .advantages__cards {
-    padding-bottom: 64px;
+    padding-bottom: 80px;
   }
 
   .advantages__card-heading h3,
@@ -1235,7 +1243,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .calculator__heading {
-    padding: 64px 0 32px;
+    padding: 80px 0 32px;
   }
 
   .order-block__form {
@@ -1251,9 +1259,9 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-bottom: 24px;
   }
 
-  .order-block__form p {
+  /* .order-block__form p {
     padding: 8px 0 24px;
-  }
+  } */
 
   .order-block__text {
     font-size: 24px;
@@ -1263,6 +1271,30 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .order-block__call,
   .order-block__adress {
     padding-bottom: 8px;
+  }
+
+  .about-us__cards-container,
+  .feedback__cards-container,
+  .portfolio__items,
+  .calculator__items,
+  .offer__form, .order-block {
+    padding-bottom: 80px;
+  }
+
+  .working-process__cards {
+    margin-bottom: 80px;
+  }
+
+  .offer__heading {
+    padding: 80px 0 32px;
+  }
+
+  .promo-video {
+    padding: 80px 0;
+  }
+
+  .promo-video__heading h2 {
+    padding-bottom: 32px;
   }
 }
 
@@ -1678,6 +1710,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 }
 
 @media screen and (max-width: 667px) {
+
   .header__nav,
   .header-hide__nav {
     display: none;
