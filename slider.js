@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     var owl = $(".owl-carousel");
-   
+
     owl.owlCarousel({
         items : 3, 
         margin: 10,
@@ -21,12 +21,23 @@ $(document).ready(function() {
 
     });
 
+    //remove nav and dots on portfolio slider
+    $(".owl-nav:eq(1)").remove();
+    $(".owl-dots:eq(1)").remove();
+
+    if(document.body.clientWidth <= 768){
+      $(".owl-nav").remove();
+    }
+
+    /* $(".next_button").click(function(){
+      owl.trigger("next.owl.carousel");
+    });
+     
+    $(".prev_button").click(function(){
+      owl.trigger("prev.owl.carousel");
+    }); */
+
   });
 
-  /* $(".next_button").click(function(){
-    owl.trigger("next.owl.carousel");
-  });
-   
-  $(".prev_button").click(function(){
-    owl.trigger("prev.owl.carousel");
-  }); */
+
+ 
