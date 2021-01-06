@@ -556,9 +556,9 @@ form [type=text] {
 
 /* БАННЕР */
 
-.banner {
+/* .banner {
   background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
-}
+} */
 
 .banner img {
   max-width: 100%;
@@ -1975,7 +1975,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .banner-img {
     height: 624px;
-    background: #FFD109 url(./assets/img/sale-banner-mobile.png) no-repeat center top/cover;
+    background: #FFD109 url(./assets/img/sale-banner-new-year--mobile.png) no-repeat center top/cover;
   }
 
   .main-screen__social ul {
