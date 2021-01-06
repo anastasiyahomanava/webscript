@@ -1933,6 +1933,11 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     border-bottom: 1px dotted #455FFF;
   }
 
+  .more_info a i {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+
   .working-process__card h4 {
     font-size: 24px;
   }
