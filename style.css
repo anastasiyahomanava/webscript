@@ -1224,7 +1224,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .advantages__cards {
     padding-bottom: 80px;
   }
-  
+
   .advantages__card-heading h3,
   .advantages__card-price h3 {
     font-size: 24px;
@@ -1258,7 +1258,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-right: 8px;
   }
 
-  
+
 
   .calculator__heading {
     padding: 80px 0 32px;
@@ -1853,6 +1853,14 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     color: #FFFFFF;
   }
 
+  .offer p {
+    color: #F2F2F2;
+  }
+
+  .owl-dots {
+    padding-top: 24px;
+  }
+
   .about-us__heading h2,
   .hot-sale__heading,
   .advantages__heading h2,
@@ -1908,25 +1916,22 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   /* add class hidden for adventages_cards   */
-  .hidden{
+  .hidden {
     display: none;
   }
-  /* class for button more info */
-  .more_info{
-    display:block;
-    margin: 23px auto 0;
-}
-.more_info a{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration-color: #455FFF;
-    text-decoration-line: underline;
-    color: #455FFF
-}
 
+  /* class for button more info */
+  .more_info {
+    display: block;
+    margin: 23px auto 0;
+  }
+
+  .more_info a {
+    font-size: 18px;
+    color: #455FFF;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #455FFF;
+  }
 
   .working-process__card h4 {
     font-size: 24px;
