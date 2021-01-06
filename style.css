@@ -1974,8 +1974,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .banner-img {
-    height: 624px;
-    width: 100vw;
+    /* height: 624px; */
     background: #FFD109 url(./assets/img/sale-banner-new-year--mobile.png) no-repeat center top/cover;
   }
 
