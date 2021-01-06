@@ -988,7 +988,7 @@ input[type=submit]:hover {
 /* ФОРМА ЗАКАЗА */
 
 .order-block {
-  background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/order-block-bg.png) no-repeat center top/cover;
   padding-bottom: 120px;
 }
 
@@ -1047,7 +1047,7 @@ input[type=submit]:hover {
 .order-block__text {
   font-weight: 400;
   font-size: 40px;
-  line-height: 110%;
+  line-height: 140%;
   color: #FFFFFF;
   margin-left: 48px;
 }
@@ -1061,7 +1061,7 @@ input[type=submit]:hover {
 .order-block__call {
   display: flex;
   align-items: center;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .order-block__call:hover {
@@ -1071,7 +1071,11 @@ input[type=submit]:hover {
 .order-block__call a {
   color: #FFFFFF;
   font-size: 20px;
-  padding-left: 8px;
+  /* padding-left: 8px; */
+}
+
+.order-block__social {
+  padding-bottom: 16px;
 }
 
 .order-block__social ul {
@@ -1090,7 +1094,7 @@ input[type=submit]:hover {
 
 .order-block__adress {
   font-size: 20px;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
 }
 
 .order-block__adress i {
@@ -1278,13 +1282,13 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .order-block__text {
     font-size: 24px;
-    line-height: 120%;
+    /* line-height: 120%; */
   }
 
-  .order-block__call,
+  /* .order-block__call,
   .order-block__adress {
     padding-bottom: 8px;
-  }
+  } */
 
   .about-us__cards-container,
   .feedback__cards-container,
@@ -1534,7 +1538,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .order-block__text {
     font-size: 32px;
-    line-height: 100%;
     margin-left: 40px;
   }
 
