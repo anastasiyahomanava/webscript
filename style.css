@@ -1927,10 +1927,10 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   .more_info a {
-    font-size: 18px;
-    color: #455FFF;
+    /* font-size: 18px;
+    color: #455FFF; */
     padding-bottom: 4px;
-    border-bottom: 1px dotted #455FFF;
+    border-bottom: 1px dotted;
   }
 
   .more_info a i {
