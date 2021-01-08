@@ -303,6 +303,13 @@ form [type=text] {
   padding-top: 16px;
 }
 
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 48px;
+  color: #222222d0;
+}
+
 .first-card {
   background: #FAD949 url(./assets/img/second-block/1.png) no-repeat center top/cover;
 }
