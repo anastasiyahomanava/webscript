@@ -119,7 +119,7 @@ form [type=text] {
 
 .main-screen {
   height: 100vh;
-  background: #222222 url(./assets/img/webscript-main-bg.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/MAIN1.png) no-repeat center top/cover;
 }
 
 .header {
@@ -142,6 +142,7 @@ form [type=text] {
   padding-bottom: 16px;
   border-bottom: 1px solid transparent;
   font-size: 18px;
+  font-weight: 200;
 }
 
 .header__nav-list a:hover {
@@ -1052,17 +1053,23 @@ input[type=submit]:hover {
 }
 
 .order-block__text {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 40px;
   line-height: 140%;
   color: #FFFFFF;
   margin-left: 48px;
 }
 
-.order-block__text h4 {
-  font-weight: 400;
-  padding: 72px 0 24px;
-  color: #ffd109;
+.order-block__text--sale {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.order-block__text p {
+  padding-bottom: 48px;
 }
 
 .order-block__call {
@@ -1078,7 +1085,7 @@ input[type=submit]:hover {
 .order-block__call a {
   color: #FFFFFF;
   font-size: 20px;
-  /* padding-left: 8px; */
+  padding-left: 8px;
 }
 
 .order-block__social {
@@ -1265,8 +1272,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-right: 8px;
   }
 
-
-
   .calculator__heading {
     padding: 80px 0 32px;
   }
@@ -1284,19 +1289,13 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-bottom: 24px;
   }
 
-  /* .order-block__form p {
-    padding: 8px 0 24px;
-  } */
-
   .order-block__text {
     font-size: 24px;
-    /* line-height: 120%; */
   }
 
-  /* .order-block__call,
-  .order-block__adress {
-    padding-bottom: 8px;
-  } */
+  .order-block__text--sale {
+    font-size: 32px;
+  }
 
   .about-us__cards-container,
   .feedback__cards-container,
