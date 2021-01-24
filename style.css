@@ -239,6 +239,109 @@ form [type=text] {
   padding: 16px 0 32px;
 }
 
+.mobile__nav {
+  display: none;
+  font-weight: 200;
+  z-index: 3;
+  position: fixed;
+  width: 284px;
+  height: 814px;
+  background: linear-gradient(206deg, #FAD949 -70%, #F7C644 267%);
+}
+
+.mobile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 118px;
+  margin-left: 40px;
+}
+
+.mobile__nav-list ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.mobile__nav-list li {
+  border-bottom: 1px solid #ffffff;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mobile__nav-list a {
+  font-size: 22px;
+  line-height: 26px;
+  color: #222222;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.mobile__buttons,
+.mobile__social,
+.mobile__footer {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.mobile__buttons button {
+  width: 236px;
+  height: 60px;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__buttons button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobile__social ul {
+  display: flex;
+  margin-top: 24px;
+}
+
+.mobile__social ul a {
+  color: #222222;
+  font-size: 40px;
+  padding-right: 16px;
+}
+
+.order-btn__mobile {
+  background: #222222;
+  margin-bottom: 16px;
+}
+
+.order-btn__mobile img {
+  padding-left: 8px;
+}
+
+.call-btn__mobile {
+  background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
+}
+
+.call-btn__mobile img {
+  padding-left: 0px;
+  padding-right: 8px;
+}
+
+
+/* АКТИВНОЕ БУРГЕР МЕНЮ */
+
+.mobile__nav-active {
+  margin-left: 91px;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-name: moveLeft;
+  -webkit-animation-duration: 0.8s;
+  animation-name: moveLeft;
+  animation-duration: 0.8s;
+}
+
 /* ПОЧЕМУ ВЫБИРАЮТ НАС */
 
 .about-us__heading {
