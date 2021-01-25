@@ -119,7 +119,7 @@ form [type=text] {
 
 .main-screen {
   height: 100vh;
-  background: #222222 url(./assets/img/webscript-main-bg.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/MAIN1.png) no-repeat center top/cover;
 }
 
 .header {
@@ -142,6 +142,7 @@ form [type=text] {
   padding-bottom: 16px;
   border-bottom: 1px solid transparent;
   font-size: 18px;
+  font-weight: 200;
 }
 
 .header__nav-list a:hover {
@@ -238,6 +239,109 @@ form [type=text] {
   padding: 16px 0 32px;
 }
 
+.mobile__nav {
+  display: none;
+  font-weight: 200;
+  z-index: 3;
+  position: fixed;
+  width: 284px;
+  height: 814px;
+  background: linear-gradient(206deg, #FAD949 -70%, #F7C644 267%);
+}
+
+.mobile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 118px;
+  margin-left: 40px;
+}
+
+.mobile__nav-list ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.mobile__nav-list li {
+  border-bottom: 1px solid #ffffff;
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.mobile__nav-list a {
+  font-size: 22px;
+  line-height: 26px;
+  color: #222222;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.mobile__buttons,
+.mobile__social,
+.mobile__footer {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.mobile__buttons button {
+  width: 236px;
+  height: 60px;
+  border-radius: 2px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__buttons button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobile__social ul {
+  display: flex;
+  margin-top: 24px;
+}
+
+.mobile__social ul a {
+  color: #222222;
+  font-size: 40px;
+  padding-right: 16px;
+}
+
+.order-btn__mobile {
+  background: #222222;
+  margin-bottom: 16px;
+}
+
+.order-btn__mobile img {
+  padding-left: 8px;
+}
+
+.call-btn__mobile {
+  background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
+}
+
+.call-btn__mobile img {
+  padding-left: 0px;
+  padding-right: 8px;
+}
+
+
+/* АКТИВНОЕ БУРГЕР МЕНЮ */
+
+.mobile__nav-active {
+  margin-left: 91px;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-name: moveLeft;
+  -webkit-animation-duration: 0.8s;
+  animation-name: moveLeft;
+  animation-duration: 0.8s;
+}
+
 /* ПОЧЕМУ ВЫБИРАЮТ НАС */
 
 .about-us__heading {
@@ -301,6 +405,13 @@ form [type=text] {
   color: rgba(34, 34, 34, 0.8);
   width: 275px;
   padding-top: 16px;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 48px;
+  color: #222222d0;
 }
 
 .first-card {
@@ -556,9 +667,9 @@ form [type=text] {
 
 /* БАННЕР */
 
-.banner {
+/* .banner {
   background: #FAD949 url(./assets/img/yellow-bg.png) no-repeat center top/cover;
-}
+} */
 
 .banner img {
   max-width: 100%;
@@ -780,7 +891,15 @@ form [type=text] {
   padding-right: 80px;
 }
 
-.calculator__card-form--btn button {
+.calculator__card-form--btn {
+  display: flex;
+}
+
+.calculator__card-form--btn a {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.btn-purple {
   width: 280px;
   height: 53px;
   background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
@@ -791,16 +910,63 @@ form [type=text] {
   align-items: center;
 }
 
-.calculator__card-form--btn button a {
-  font-family: 'Gilroy', sans-serif;
+.btn-purple img {
+  padding-left: 16px;
+}
+
+.btn-back img {
+  padding-right: 16px;
+}
+
+.btn-back {
+  /* display: none; */
+  background: #ffffff;
+  border: 1px solid #455FFF;
+  width: 153px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.btn-back--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-back a {
+  font-size: 18px;
+  color: #455FFF;
+}
+
+.btn-purple a {
   font-size: 18px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.calculator__card-form--btn button:hover {
+.btn-purple:hover {
   cursor: pointer;
   background: linear-gradient(291.19deg, #7184FF 2.11%, #8053FF 100%);
+}
+
+.calculator__img img {
+  height: 100%;
+}
+
+.calculator__card--text {
+  font-size: 18px;
+  margin-top: 48px;
+}
+
+.calculator__card--text span {
+  color: #455fff;
+}
+
+.calculator__card-content--second {
+  display: none;
 }
 
 /* ПРЕДЛОЖЕНИЕ */
@@ -988,7 +1154,7 @@ input[type=submit]:hover {
 /* ФОРМА ЗАКАЗА */
 
 .order-block {
-  background: #222222 url(./assets/img/black-bg.png) no-repeat center top/cover;
+  background: #222222 url(./assets/img/order-block-bg.png) no-repeat center top/cover;
   padding-bottom: 120px;
 }
 
@@ -1045,23 +1211,29 @@ input[type=submit]:hover {
 }
 
 .order-block__text {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 40px;
-  line-height: 110%;
+  line-height: 140%;
   color: #FFFFFF;
   margin-left: 48px;
 }
 
-.order-block__text h4 {
-  font-weight: 400;
-  padding: 72px 0 24px;
-  color: #ffd109;
+.order-block__text--sale {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.order-block__text p {
+  padding-bottom: 48px;
 }
 
 .order-block__call {
   display: flex;
   align-items: center;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .order-block__call:hover {
@@ -1072,6 +1244,10 @@ input[type=submit]:hover {
   color: #FFFFFF;
   font-size: 20px;
   padding-left: 8px;
+}
+
+.order-block__social {
+  padding-bottom: 16px;
 }
 
 .order-block__social ul {
@@ -1090,7 +1266,6 @@ input[type=submit]:hover {
 
 .order-block__adress {
   font-size: 20px;
-  padding-bottom: 8px;
 }
 
 .order-block__adress i {
@@ -1221,7 +1396,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   .advantages__cards {
     padding-bottom: 80px;
   }
-  
+
   .advantages__card-heading h3,
   .advantages__card-price h3 {
     font-size: 24px;
@@ -1255,8 +1430,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-right: 8px;
   }
 
-  
-
   .calculator__heading {
     padding: 80px 0 32px;
   }
@@ -1274,18 +1447,12 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     padding-bottom: 24px;
   }
 
-  /* .order-block__form p {
-    padding: 8px 0 24px;
-  } */
-
   .order-block__text {
     font-size: 24px;
-    line-height: 120%;
   }
 
-  .order-block__call,
-  .order-block__adress {
-    padding-bottom: 8px;
+  .order-block__text--sale {
+    font-size: 32px;
   }
 
   .about-us__cards-container,
@@ -1536,7 +1703,6 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .order-block__text {
     font-size: 32px;
-    line-height: 100%;
     margin-left: 40px;
   }
 
@@ -1851,6 +2017,14 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
     color: #FFFFFF;
   }
 
+  .offer p {
+    color: #F2F2F2;
+  }
+
+  .owl-dots {
+    padding-top: 24px;
+  }
+
   .about-us__heading h2,
   .hot-sale__heading,
   .advantages__heading h2,
@@ -1906,25 +2080,27 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 
   /* add class hidden for adventages_cards   */
-  .hidden{
+  .hidden {
     display: none;
   }
-  /* class for button more info */
-  .more_info{
-    display:block;
-    margin: 23px auto 0;
-}
-.more_info a{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration-color: #455FFF;
-    text-decoration-line: underline;
-    color: #455FFF
-}
 
+  /* class for button more info */
+  .more_info {
+    display: block;
+    margin: 23px auto 0;
+  }
+
+  .more_info a {
+    /* font-size: 18px;
+    color: #455FFF; */
+    padding-bottom: 4px;
+    border-bottom: 1px dotted;
+  }
+
+  .more_info a i {
+    font-size: 12px;
+    padding-left: 8px;
+  }
 
   .working-process__card h4 {
     font-size: 24px;
@@ -1963,7 +2139,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .banner-img {
     height: 624px;
-    background: #FFD109 url(./assets/img/sale-banner-mobile.png) no-repeat center top/cover;
+    background: #FFD109 url(./assets/img/sale-banner-new-year--mobile.png) no-repeat center top/cover;
   }
 
   .main-screen__social ul {

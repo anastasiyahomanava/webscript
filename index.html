@@ -7,7 +7,9 @@
   <script src="https://kit.fontawesome.com/b1ee37085b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -23,7 +25,40 @@
 <body>
   <!-- Добавил главный общий блок с id -->
   <div id="block">
-
+    <!-- Бургер меню -->
+    <div class="mobile__nav">
+      <div class="mobile__header">
+        <img src="./assets/img/webscript-logo-white.svg" alt="webscript-logo-white">
+        <img src="./assets/icons/close-menu.svg" alt="close-menu">
+      </div>
+      <div class="mobile__nav-list">
+        <ul>
+          <li><a href="#About-us">О студии</a></li>
+          <li><a href="#Advantages">Услуги</a></li>
+          <li><a href="#Portfolio">Проекты</a></li>
+          <li><a href="#Feedback">Отзывы</a></li>
+        </ul>
+      </div>
+      <div class="mobile__buttons">
+        <button class="order-btn__mobile"><a href="#Order-form">Оформить заявку</a><img
+            src="./assets/icons/arrow-black.svg" alt="1"></button>
+        <button class="call-btn__mobile"><img src="./assets/icons/call.png" alt="2"><a href="tel:+375293852508">+375 (29) 385 25 08</a></button>
+      </div>
+      <div class="mobile__social">
+        <p>Мы в соцсетях:</p>
+        <ul>
+          <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
+          <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
+          <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile__footer">
+        <p>webscript.by © 2020</p>
+      </div>
+    </div>
     <div class="main-screen">
       <header class="header-hide">
         <div class="container">
@@ -68,7 +103,7 @@
             </div>
           </header>
           <div class="main-screen__text">
-            <h1>Мы предоставляем<br>маркетинговые и IT-услуги<br>в Беларуси.</h1>
+            <h1>Маркетинговые и IT-услуги<br>в Беларуси.</h1>
             <p>Качественная разработка и доработка сайтов, уникальный дизайн,<br>настройка рекламы, привлечение ЦА и
               круглосуточная техподдержка</p>
             <div class="main-screen__text-buttons">
@@ -240,7 +275,6 @@
           <div class="advantages__card">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-1.png" alt="develop"> -->
                 <h3>Разработка.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -249,7 +283,6 @@
                 <li><span>Разработка интернет-магазина</span></li>
                 <li><span>Работа с базами данных</span></li>
                 <li><span>Доработка сайтов</span></li>
-                <!-- <li>Комплексная разработка</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>от 199 BYN</h3>
@@ -264,7 +297,6 @@
           <div class="advantages__card card-margin-center">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-2.png" alt="develop"> -->
                 <h3>Дизайн.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -273,7 +305,6 @@
                 <li><span>Дизайн Landing Page</span></li>
                 <li><span>UX/UI дизайн</span></li>
                 <li><span>Дизайн полиграфии</span></li>
-                <!-- <li>Брендинг и многое другое</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>от 25 BYN</h3>
@@ -288,7 +319,6 @@
           <div class="advantages__card card-margin">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-3.png" alt="develop"> -->
                 <h3>Продвижение.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -297,7 +327,6 @@
                 <li><span>Viber и SMS-рассылка</span></li>
                 <li><span>Таргетинг</span></li>
                 <li><span>Контекстная реклама</span></li>
-                <!-- <li>Бесплатная консультация</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>от 49 BYN</h3>
@@ -312,7 +341,6 @@
           <div class="advantages__card second-row">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-4.png" alt="develop"> -->
                 <h3>Поиск клиентов.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -321,7 +349,6 @@
                 <li><span>Привлечение новых клиентов</span></li>
                 <li><span>Оценка потребностей клиентов</span></li>
                 <li><span>Разработка под конкретную ЦА</span></li>
-                <!-- <li>Бесплатная консультация</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>от 67 BYN</h3>
@@ -336,7 +363,6 @@
           <div class="advantages__card second-row">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-5.png" alt="develop"> -->
                 <h3>Видео-реклама.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -345,7 +371,6 @@
                 <li><span>Креативная реклама</span></li>
                 <li><span>Промо-видео</span></li>
                 <li><span>Видео-реклама</span></li>
-                <!-- <li>От идеи до создания</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>от 187 BYN</h3>
@@ -360,7 +385,6 @@
           <div class="advantages__card second-row">
             <div class="advantages__card-content">
               <div class="advantages__card-heading">
-                <!-- <img src="./assets/icons/adv-6.png" alt="develop"> -->
                 <h3>Техподдержка.</h3>
               </div>
               <ul class="advantages__card-list">
@@ -369,7 +393,6 @@
                 <li><span>Исправление ошибок на сайте</span></li>
                 <li><span>Помощь с формами</span></li>
                 <li><span>Помощь в размещении контента</span></li>
-                <!-- <li>Бесплатные консультации</li> -->
               </ul>
               <div class="advantages__card-price">
                 <h3>Бесплатно!</h3>
@@ -382,7 +405,7 @@
             </div>
           </div>
           <div class="more_info">
-            <a>Показать больше услуг</a>
+            <a>Показать больше услуг<i class="fas fa-chevron-down"></i></a>
           </div>
         </div>
       </div>
@@ -391,7 +414,7 @@
     <section class="banner">
       <div class="container">
         <div class="banner-img">
-          <img src="./assets/img/sale-banner.png" alt="sale-banner">
+          <img src="./assets/img/sale-banner-new-year.png" alt="sale-banner">
         </div>
       </div>
     </section>
@@ -527,8 +550,70 @@
 
                   </div>
 
+                  <!-- <div class="calculator__card--text">
+                    <p>Сумма заказа: <span>~ 100 рублей</span></p>
+                  </div> -->
+
                   <div class="calculator__card-form--btn">
-                    <button type="submit"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
+                    <button type="submit" class="btn-purple"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
+                        alt="arrow"></button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <div class="calculator__card-content calculator__card-content--second">
+              <div class="calculator__card-steps">
+                <h4>Шаг <span>2</span> из <span>2</span></h4>
+              </div>
+              <div class="calculator__card-form">
+                <h4>Какая у вас цель?</h4>
+                <form action="#">
+                  <div class="calculator__card-form--inputs">
+                    <div class="calculator__card-form--left">
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="develop" name="test" value="Разработка">
+                        <label for="develop">Вёрстка Landing Page</label>
+                      </div>
+
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="design" name="test" value="Дизайн">
+                        <label for="design">Адаптивная вёрстка</label>
+                      </div>
+
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="marketing" name="test" value="Продвижение">
+                        <label for="marketing">Интернет-магазин</label><br>
+                      </div>
+                    </div>
+
+                    <div class="calculator__card-form--right">
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="clients" name="test" value="Найти клиентов">
+                        <label for="clients">Работа с базой данной</label>
+                      </div>
+
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="video" name="test" value="Снять видео-рекламу">
+                        <label for="video">Комплексная разработка</label>
+                      </div>
+
+                      <div class="calculator__card-form--input-item">
+                        <input type="radio" id="support" name="test" value="Получить консультацию">
+                        <label for="support">Доработка сайта</label><br>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="calculator__card--text">
+                    <p>Сумма заказа: <span>~ 0 рублей</span></p>
+                  </div>
+
+                  <div class="calculator__card-form--btn">
+                    <button type="submit" class="btn-back"><img src="./assets/icons/arrow-back.svg"
+                      alt="arrow-back"><a href="#">Назад</a></button>
+                    <button type="submit" class="btn-purple"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
                         alt="arrow"></button>
                   </div>
 
@@ -573,174 +658,136 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="Feedback">
       <div class="container">
-        <div class="feedback__heading">
-          <h2>Что о нас говорят клиенты?</h2>
+      <div class="feedback__heading">
+        <h2>Что о нас говорят клиенты?</h2>
+      </div>
+      <div class="feedback__cards-container">
+        <div class="feedback__cards">
+
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
+                  я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__card">
+            <img src="./assets/img/client-woman.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
+                  я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__card">
+            <img src="./assets/img/client-man.png" alt="client-man">
+            <div class="feedback__card-text">
+              <div class="feedback__card-text_heading">
+                <h4>Николаев<br>Олег.</h4>
+                <p>Индивидуальный предприниматель</p>
+              </div>
+              <div class="feedback__card-text_message">
+                <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
+                  я
+                  доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
+              </div>
+              <div class="feedback__card-social">
+                <ul>
+                  <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
+                  <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                  </li>
+                  <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i class="fab fa-telegram-plane"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="feedback__cards-container">
-          <div class="feedback__cards">
-
-            <div class="feedback__card">
-              <img src="./assets/img/client-man.png" alt="client-man">
-              <div class="feedback__card-text">
-                <div class="feedback__card-text_heading">
-                  <h4>Николаев<br>Олег.</h4>
-                  <p>Индивидуальный предприниматель</p>
-                </div>
-                <div class="feedback__card-text_message">
-                  <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
-                    я
-                    доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-                </div>
-                <div class="feedback__card-social">
-                  <ul>
-                    <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                    <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
-                          class="fab fa-instagram"></i></a>
-                    </li>
-                    <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i
-                          class="fab fa-telegram-plane"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="feedback__card">
-              <img src="./assets/img/client-woman.png" alt="client-man">
-              <div class="feedback__card-text">
-                <div class="feedback__card-text_heading">
-                  <h4>Николаев<br>Олег.</h4>
-                  <p>Индивидуальный предприниматель</p>
-                </div>
-                <div class="feedback__card-text_message">
-                  <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
-                    я
-                    доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-                </div>
-                <div class="feedback__card-social">
-                  <ul>
-                    <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                    <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
-                          class="fab fa-instagram"></i></a>
-                    </li>
-                    <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i
-                          class="fab fa-telegram-plane"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="feedback__card">
-              <img src="./assets/img/client-man.png" alt="client-man">
-              <div class="feedback__card-text">
-                <div class="feedback__card-text_heading">
-                  <h4>Николаев<br>Олег.</h4>
-                  <p>Индивидуальный предприниматель</p>
-                </div>
-                <div class="feedback__card-text_message">
-                  <p>“Очень понравилась работа этой веб-студии, делали лендинг и оформление соцсетей, справились в срок,
-                    я
-                    доволен, буду обращаться к вам еще! Большое спасибо за работу!”</p>
-                </div>
-                <div class="feedback__card-social">
-                  <ul>
-                    <li><a href="https://vk.com/id18589211" target="_blank"><i class="fab fa-vk"></i></a></li>
-                    <li><a href="https://www.instagram.com/drowdrowsy/" target="_blank"><i
-                          class="fab fa-instagram"></i></a>
-                    </li>
-                    <li><a title="Telegram" href="tg://resolve?domain=voidvoids"><i
-                          class="fab fa-telegram-plane"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
 
-    <section class="order-block" id="Order-form">
-      <div class="container">
+  <section class="order-block" id="Order-form">
+    <div class="container">
 
-        <h2 class="order-block__heading">Обсудим проект?</h2>
+      <h2 class="order-block__heading">Обсудим проект?</h2>
 
-        <div class="order-block__flex-container">
+      <div class="order-block__flex-container">
 
-          <div class="order-block__form">
-            <form action="#">
-              <h4>Мы вам перезвоним!</h4>
-              <div class="order-block__form-input">
-                <label for="name">Ваше имя</label>
-                <input type="text" placeholder="Как к вам можно обращаться?" id="name" required>
-              </div>
-              <div class="order-block__form-input">
-                <label for="phone">Ваш номер телефона</label>
-                <input type="text" placeholder="+375 (25) 123 45 67" id="phone"
-                  pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" required>
-              </div>
-              <div class="order-block__form-input">
-                <label for="textarea">Комментарий к заказу (не обязательно)</label>
-                <input type="text" placeholder="Оставьте свой комментарий, либо задайте вопрос консультанту"
-                  id="textarea">
-              </div>
-              <p>После обработки заявки, наш специалист свяжется с вами
-                в кратчайшие сроки по указанному номеру</p>
-              <div class="order-block-form--btn">
-                <input type="submit" value="Заказать звонок">
-              </div>
-            </form>
-          </div>
-
-          <div class="order-block__text">
-            <p>Заполните форму<br>
-              и получите скидку<br>
-              на первый заказ <span>-10%!</span>
-            </p>
-            <h4>Связь с нами</h4>
-            <div class="order-block__call">
-              <img src="./assets/icons/call.png" alt="call">
-              <a href="tel:+375293852508">+375 (29) 385 25 08</a>
+        <div class="order-block__form">
+          <form action="#">
+            <h4>Мы вам перезвоним!</h4>
+            <div class="order-block__form-input">
+              <label for="name">Ваше имя</label>
+              <input type="text" placeholder="Как к вам можно обращаться?" id="name" required>
             </div>
-            <div class="order-block__adress">
-              <p><i class="fas fa-map-marker-alt"></i>Гомель, Беларусь</p>
+            <div class="order-block__form-input">
+              <label for="phone">Ваш номер телефона</label>
+              <input type="text" placeholder="+375 (25) 123 45 67" id="phone"
+                pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" required>
             </div>
-            <div class="order-block__social">
-              <ul>
-                <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
-                <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
-                <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i
-                      class="fab fa-instagram"></i></a>
-                </li>
-                <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a>
-                </li>
-              </ul>
+            <div class="order-block__form-input">
+              <label for="textarea">Комментарий к заказу (не обязательно)</label>
+              <input type="text" placeholder="Текст комментария" id="textarea">
             </div>
-          </div>
+            <p>После обработки заявки, наш специалист свяжется с вами
+              в кратчайшие сроки по указанному номеру</p>
+            <div class="order-block-form--btn">
+              <input type="submit" value="Заказать звонок">
+            </div>
+          </form>
         </div>
 
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__flex-container">
-          <div class="footer__logo">
-            <a href="#"><img src="./assets/icons/footer-logo.svg" alt=""></a>
-          </div>
-          <div class="footer__text">
-            <p>УНП 491487135 ИП Мельников</p>
-          </div>
-          <div class="footer__social-links">
+        <div class="order-block__text">
+          <p>Заполните форму и<br>
+            <span class="order-block__text--sale">получите скидку</span><br>
+            на первый заказ
+          </p>
+          <div class="order-block__social">
             <ul>
               <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
               <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
@@ -750,9 +797,41 @@
               </li>
             </ul>
           </div>
+          <div class="order-block__call">
+            <img src="./assets/icons/call.png" alt="call">
+            <a href="tel:+375293852508">+375 (29) 385 25 08</a>
+          </div>
+          <div class="order-block__adress">
+            <p><i class="fas fa-map-marker-alt"></i>Гомель, Беларусь </p>
+          </div>
         </div>
       </div>
-    </footer>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex-container">
+        <div class="footer__logo">
+          <a href="#"><img src="./assets/icons/footer-logo.svg" alt=""></a>
+        </div>
+        <div class="footer__text">
+          <p>УНП 491487135 ИП Мельников</p>
+        </div>
+        <div class="footer__social-links">
+          <ul>
+            <li><a title="Viber" href="viber://chat?number=+375293852508"><i class="fab fa-viber"></i></a></li>
+            <li><a href="https://vk.com/webscriptby" target="_blank"><i class="fab fa-vk"></i></a></li>
+            <li><a href="https://www.instagram.com/webscript.by/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a title="Telegram" href="tg://resolve?domain=Web_Script"><i class="fab fa-telegram-plane"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   </div>
   <script src="index.js"></script>
