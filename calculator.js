@@ -93,5 +93,5 @@ let BackFirstForm = function()
     /// показываем первую форму 
     document.getElementsByClassName("calculator__card-content--second")[0].style.display = "none";
 }
-                        /// кнопка назад клик
+    /// кнопка назад клик
 button_Back.addEventListener("click", BackFirstForm) 
