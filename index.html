@@ -516,34 +516,34 @@
                   <div class="calculator__card-form--inputs">
                     <div class="calculator__card-form--left">
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="develop" name="test" value="Разработка">
-                        <label for="develop">Разработка</label>
+                        <input type="radio" id="dev" class="choice" name="test" value="Разработка">
+                        <label for="dev">Разработка</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="design" name="test" value="Дизайн">
-                        <label for="design">Дизайн</label>
+                        <input type="radio" id="UX" class="choice" name="test" value="Дизайн">
+                        <label for="UX">Дизайн</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="marketing" name="test" value="Продвижение">
-                        <label for="marketing">Продвижение</label><br>
+                        <input type="radio" id="prom" class="choice" name="test" value="Продвижение">
+                        <label for="prom">Продвижение</label><br>
                       </div>
                     </div>
 
                     <div class="calculator__card-form--right">
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="clients" name="test" value="Найти клиентов">
-                        <label for="clients">Найти клиентов</label>
+                        <input type="radio" id="found" class="choice" name="test" value="Найти клиентов">
+                        <label for="found">Найти клиентов</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="video" name="test" value="Снять видео-рекламу">
+                        <input type="radio" id="video" class="choice" name="test" value="Снять видео-рекламу">
                         <label for="video">Снять видео-рекламу</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="support" name="test" value="Получить консультацию">
+                        <input type="radio" id="support" class="choice" name="test" value="Получить консультацию">
                         <label for="support">Получить консультацию</label><br>
                       </div>
                     </div>
@@ -555,7 +555,7 @@
                   </div> -->
 
                   <div class="calculator__card-form--btn">
-                    <button type="submit" class="btn-purple"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
+                    <button type="button" class="btn-purple">Следующий вопрос<img src="./assets/icons/arrow.svg"
                         alt="arrow"></button>
                   </div>
 
@@ -572,35 +572,35 @@
                   <div class="calculator__card-form--inputs">
                     <div class="calculator__card-form--left">
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="develop" name="test" value="Разработка">
-                        <label for="develop">Вёрстка Landing Page</label>
+                        <input type="radio" id="develop" class="calcut" name="test" value="Разработка">
+                        <label for="develop" class="secondLabel">Вёрстка Landing Page</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="design" name="test" value="Дизайн">
-                        <label for="design">Адаптивная вёрстка</label>
+                        <input type="radio" id="design" class="calcut" name="test" value="Дизайн">
+                        <label for="design" class="secondLabel">Адаптивная вёрстка</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="marketing" name="test" value="Продвижение">
-                        <label for="marketing">Интернет-магазин</label><br>
+                        <input type="radio" id="marketing" class="calcut" name="test" value="Продвижение">
+                        <label for="marketing" class="secondLabel">Интернет-магазин</label><br>
                       </div>
                     </div>
 
                     <div class="calculator__card-form--right">
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="clients" name="test" value="Найти клиентов">
-                        <label for="clients">Работа с базой данной</label>
+                        <input type="radio" id="clients" class="calcut" name="test" value="Найти клиентов">
+                        <label for="clients" class="secondLabel">Работа с базой данной</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="video" name="test" value="Снять видео-рекламу">
-                        <label for="video">Комплексная разработка</label>
+                        <input type="radio" id="video" class="calcut" name="test" value="Снять видео-рекламу">
+                        <label for="video" class="secondLabel">Комплексная разработка</label>
                       </div>
 
                       <div class="calculator__card-form--input-item">
-                        <input type="radio" id="support" name="test" value="Получить консультацию">
-                        <label for="support">Доработка сайта</label><br>
+                        <input type="radio" id="support" class="calcut" name="test" value="Получить консультацию">
+                        <label for="support" class="secondLabel">Доработка сайта</label><br>
                       </div>
                     </div>
 
@@ -611,9 +611,9 @@
                   </div>
 
                   <div class="calculator__card-form--btn">
-                    <button type="submit" class="btn-back"><img src="./assets/icons/arrow-back.svg"
+                    <button type="button" class="btn-back"><img src="./assets/icons/arrow-back.svg"
                       alt="arrow-back"><a href="#">Назад</a></button>
-                    <button type="submit" class="btn-purple"><a href="#">Следующий вопрос</a><img src="./assets/icons/arrow.svg"
+                    <button type="button" class="btn-purple">Следующий вопрос<img src="./assets/icons/arrow.svg"
                         alt="arrow"></button>
                   </div>
 
@@ -836,6 +836,7 @@
   </div>
   <script src="index.js"></script>
   <script src="slider.js"></script>
+  <script src="calculator.js"></script>
 </body>
 
 </html>
