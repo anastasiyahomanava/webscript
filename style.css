@@ -872,7 +872,7 @@ form [type=text] {
 }
 
 .calculator__card-form--btn {
-  padding-top: 64px;
+  padding-top: 16px;
 }
 
 .calculator__card-form--inputs {
@@ -900,6 +900,8 @@ form [type=text] {
 }
 
 .btn-purple {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
   width: 280px;
   height: 53px;
   background: linear-gradient(289.16deg, #455FFF -59.93%, #8053FF 102.75%);
@@ -908,6 +910,7 @@ form [type=text] {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
 }
 
 .btn-purple img {
@@ -954,11 +957,12 @@ form [type=text] {
 
 .calculator__img img {
   height: 100%;
+  width: 100%;
 }
 
 .calculator__card--text {
   font-size: 18px;
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .calculator__card--text span {
@@ -1622,7 +1626,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
 
   .calculator__img img {
     width: 383px;
-    height: 428px;
+    /* height: 428px; */
   }
 
   .calculator__card-content {
@@ -1964,7 +1968,7 @@ screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webki
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .container {
     width: 335px;
   }
