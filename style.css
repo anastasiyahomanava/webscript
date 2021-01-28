@@ -931,6 +931,9 @@ form [type=text] {
   justify-content: center;
   align-items: center;
   margin-right: 16px;
+  color: #455FFF;
+  font-size: 18px;
+  font-family: 'Gilroy', sans-serif;
 }
 
 .btn-back--active {
