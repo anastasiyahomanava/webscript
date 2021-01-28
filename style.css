@@ -239,6 +239,10 @@ form [type=text] {
   padding: 16px 0 32px;
 }
 
+body.overflow_hidden {
+  overflow: hidden;
+}
+
 .mobile__nav {
   display: none;
   font-weight: 200;
@@ -247,6 +251,34 @@ form [type=text] {
   width: 284px;
   height: 814px;
   background: linear-gradient(206deg, #FAD949 -70%, #F7C644 267%);
+}
+.mobile__nav_active {
+  margin-left: 91px;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-name: moveLeft;
+  -webkit-animation-duration: 0.8s;
+   animation-name: moveLeft;
+   animation-duration: 0.8s;
+
+}
+
+@-webkit-keyframes moveLeft {
+  from {
+          margin-left: 376px;
+  }
+  to{
+          margin-right:91px;
+  }
+}
+@keyframes moveLeft {
+  from {
+          margin-left:376px;
+     
+  }
+  to{
+          margin-left:91px;
+  }
 }
 
 .mobile__header {
