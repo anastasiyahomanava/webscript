@@ -80,3 +80,21 @@ if (document.body.clientWidth <= 375) {
 } else {
   document.getElementsByClassName("more_info")[0].style.display = "none"
 }
+
+// ****************************************mobil menu animation***************************************** //
+  // show menu 357                      
+  document.getElementsByClassName("header__call")[0].addEventListener("click",() => {
+    document.body.classList.add("overflow_hidden");
+    document.getElementsByClassName("mobile__nav")[0].classList.add("mobile__nav_active")
+  })
+
+  document.getElementsByClassName("header-hide__call")[0].addEventListener("click",() => {
+    document.body.classList.add("overflow_hidden");
+    document.getElementsByClassName("mobile__nav")[0].classList.add("mobile__nav_active")
+  })
+
+   // closed menu 357
+   document.getElementsByClassName("mobile__header")[0].children[1].addEventListener("click",() => {
+            document.body.classList.remove("overflow_hidden");
+            document.getElementsByClassName("mobile__nav_active")[0].classList.remove("mobile__nav_active");
+   })
